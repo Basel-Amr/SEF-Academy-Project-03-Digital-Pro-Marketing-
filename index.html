@@ -56,334 +56,499 @@
 
    <body>
       <!-- Section 1 : Navigation Bar (Navbar Section-Header) -->
-      <!-- =========================================
-         Section 1 : Navigation Bar
-         ========================================= -->
-      <header class="site-header">
-
-         <!-- Main Navigation -->
-         <nav
-            class="navbar mx-auto flex min-h-[88px] w-full items-center justify-between px-5
-                  sm:px-8 lg:px-12 xl:max-w-[1440px]"
-            aria-label="Main Navigation"
-         >
-
-            <!-- =========================================
-               Brand / Logo
-               ========================================= -->
-            <a
-               href="#home"
-               class="navbar-brand flex shrink-0 items-center gap-3"
-               aria-label="DigitalPro Home"
-            >
-
-               <!-- Brand Icon -->
-               <div
-                  class="brand-logo flex h-11 w-11 items-center justify-center rounded-xl"
-                  aria-hidden="true"
-               >
-                  <span class="brand-logo-text text-lg font-bold">
-                     DP
-                  </span>
-               </div>
-               <!-- /brand-logo -->
+<!-- =========================================================
+     FIXED HEADER
+     DigitalPro - Premium Navigation
+========================================================= -->
+<header
+   id="site-header"
+   class="fixed inset-x-0 top-0 z-50
+          border-b border-white/[0.07]
+          bg-[#090909]/90
+          backdrop-blur-xl
+          transition-all duration-500"
+>
+   <!-- /site-header -->
 
 
-               <!-- Brand Information -->
-               <div class="brand-content flex flex-col">
-
-                  <span class="brand-name text-xl font-bold leading-tight sm:text-2xl">
-                     Digital<span>Pro</span>
-                  </span>
-
-                  <span class="brand-tagline hidden text-xs sm:block">
-                     Creative Digital Agency
-                  </span>
-
-               </div>
-               <!-- /brand-content -->
-
-            </a>
-            <!-- /navbar-brand -->
+   <!-- =====================================================
+        HEADER INNER CONTAINER
+   ====================================================== -->
+   <div
+      class="mx-auto flex h-[82px] w-full max-w-[1440px]
+             items-center justify-between
+             px-5
+             sm:px-8
+             lg:px-12
+             xl:px-16"
+   >
+      <!-- /header-container -->
 
 
-            <!-- =========================================
-               Desktop Navigation
-               ========================================= -->
-            <div
-               class="desktop-nav hidden items-center gap-7 lg:flex xl:gap-10"
-               aria-label="Desktop Navigation"
-            >
+      <!-- =================================================
+           BRAND / LOGO
+      ================================================== -->
+      <a
+         href="#home"
+         class="group flex shrink-0 items-center gap-3"
+         aria-label="DigitalPro Home"
+      >
 
-               <a
-                  href="#home"
-                  class="nav-link active whitespace-nowrap text-sm font-medium xl:text-base"
-                  aria-current="page"
-               >
-                  Home
-               </a>
-
-               <a
-                  href="#services"
-                  class="nav-link whitespace-nowrap text-sm font-medium xl:text-base"
-               >
-                  Services
-               </a>
-
-               <a
-                  href="#work"
-                  class="nav-link whitespace-nowrap text-sm font-medium xl:text-base"
-               >
-                  Our Work
-               </a>
-
-               <a
-                  href="#about"
-                  class="nav-link whitespace-nowrap text-sm font-medium xl:text-base"
-               >
-                  About Us
-               </a>
-
-               <a
-                  href="#team"
-                  class="nav-link whitespace-nowrap text-sm font-medium xl:text-base"
-               >
-                  Our Team
-               </a>
-
-            </div>
-            <!-- /desktop-nav -->
-
-
-            <!-- =========================================
-               Navigation Actions
-               ========================================= -->
-            <div class="navbar-actions flex shrink-0 items-center gap-3 sm:gap-4">
-
-
-               <!-- =====================================
-                  Let's Talk
-                  Desktop / Large Screens
-                  ===================================== -->
-               <a
-                  href="#contact"
-                  class="contact-link hidden items-center gap-2 whitespace-nowrap text-sm font-medium xl:flex"
-               >
-
-                  <span
-                     class="contact-status h-2 w-2 rounded-full"
-                     aria-hidden="true"
-                  ></span>
-
-                  <span class="contact-text">
-                     Let's Talk
-                  </span>
-
-               </a>
-               <!-- /contact-link -->
-
-
-               <!-- =====================================
-                  Start a Project CTA
-                  ===================================== -->
-               <a
-                  href="#contact"
-                  class="nav-cta hidden items-center gap-2 whitespace-nowrap rounded-xl
-                        px-5 py-3 text-sm font-semibold sm:flex lg:px-6 xl:text-base"
-               >
-
-                  <span class="cta-text">
-                     Start a Project
-                  </span>
-
-                  <span class="cta-arrow" aria-hidden="true">
-                     <i class="fa-solid fa-arrow-right-long"></i>
-                  </span>
-
-               </a>
-               <!-- /nav-cta -->
-
-
-               <!-- =====================================
-                  Mobile Menu Button
-                  ===================================== -->
-               <button
-                  class="mobile-menu-btn flex h-11 w-11 flex-col items-center justify-center
-                        gap-1.5 rounded-xl lg:hidden"
-                  type="button"
-                  id="mobileMenuBtn"
-                  aria-label="Open navigation menu"
-                  aria-expanded="false"
-                  aria-controls="mobileNav"
-               >
-
-                  <span
-                     class="menu-line block h-[2px] w-5"
-                     aria-hidden="true"
-                  ></span>
-
-                  <span
-                     class="menu-line block h-[2px] w-5"
-                     aria-hidden="true"
-                  ></span>
-
-                  <span
-                     class="menu-line block h-[2px] w-5"
-                     aria-hidden="true"
-                  ></span>
-
-               </button>
-               <!-- /mobile-menu-btn -->
-
-            </div>
-            <!-- /navbar-actions -->
-
-         </nav>
-         <!-- /navbar -->
-
-
-         <!-- =========================================
-            Mobile Navigation
-            ========================================= -->
+         <!-- =================================================
+              DP LOGO MARK
+         ================================================== -->
          <div
-            id="mobileNav"
-            class="mobile-nav hidden lg:hidden"
-            aria-hidden="true"
+            class="relative flex h-11 w-11 items-center justify-center
+                   overflow-hidden rounded-xl
+                   border border-[#d4af5a]/30
+                   bg-[#d4af5a]
+                   shadow-[0_0_25px_rgba(212,175,90,0.08)]
+                   transition-all duration-500
+                   group-hover:border-[#d4af5a]/60
+                   group-hover:shadow-[0_0_30px_rgba(212,175,90,0.18)]
+                   group-hover:scale-105"
          >
 
-            <div class="mobile-nav-inner mx-auto w-full px-5 sm:px-8">
-
-               <!-- Mobile Navigation Links -->
-               <div class="mobile-nav-links flex flex-col">
-
-                  <a
-                     href="#home"
-                     class="mobile-nav-link active"
-                     aria-current="page"
-                  >
-                     <span>Home</span>
-
-                     <i
-                        class="fa-solid fa-arrow-right"
-                        aria-hidden="true"
-                     ></i>
-                  </a>
+            <!-- Logo shine -->
+            <div
+               class="absolute -left-8 top-0 h-full w-6
+                      rotate-[25deg]
+                      bg-white/20
+                      blur-sm
+                      transition-all duration-700
+                      group-hover:left-[120%]"
+               aria-hidden="true"
+            ></div>
+            <!-- /logo-shine -->
 
 
-                  <a
-                     href="#services"
-                     class="mobile-nav-link"
-                  >
-                     <span>Services</span>
+            <!-- DP -->
+            <span
+               class="relative text-[15px] font-black tracking-[-0.08em] text-[#090909]"
+            >
+               DP
+            </span>
+            <!-- /dp-mark -->
 
-                     <i
-                        class="fa-solid fa-arrow-right"
-                        aria-hidden="true"
-                     ></i>
-                  </a>
-
-
-                  <a
-                     href="#work"
-                     class="mobile-nav-link"
-                  >
-                     <span>Our Work</span>
-
-                     <i
-                        class="fa-solid fa-arrow-right"
-                        aria-hidden="true"
-                     ></i>
-                  </a>
+         </div>
+         <!-- /logo-mark -->
 
 
-                  <a
-                     href="#about"
-                     class="mobile-nav-link"
-                  >
-                     <span>About Us</span>
+         <!-- =================================================
+              BRAND TEXT
+         ================================================== -->
+         <div class="hidden leading-none sm:block">
 
-                     <i
-                        class="fa-solid fa-arrow-right"
-                        aria-hidden="true"
-                     ></i>
-                  </a>
+            <div class="flex items-center gap-2">
 
+               <span
+                  class="text-[21px] font-bold tracking-[-0.045em] text-white"
+               >
+                  Digital<span class="text-[#d4af5a]">Pro</span>
+               </span>
 
-                  <a
-                     href="#team"
-                     class="mobile-nav-link"
-                  >
-                     <span>Our Team</span>
+               <!-- Premium indicator -->
+               <span
+                  class="hidden h-1.5 w-1.5 rounded-full bg-[#d4af5a]
+                         shadow-[0_0_10px_rgba(212,175,90,0.7)]
+                         lg:block"
+               ></span>
 
-                     <i
-                        class="fa-solid fa-arrow-right"
-                        aria-hidden="true"
-                     ></i>
-                  </a>
+            </div>
+            <!-- /brand-name -->
 
 
-                  <a
-                     href="#contact"
-                     class="mobile-nav-link"
-                  >
-                     <span>Contact</span>
+            <span
+               class="mt-1 block text-[9px] font-medium uppercase
+                      tracking-[0.22em] text-white/35"
+            >
+               Creative Digital Agency
+            </span>
+            <!-- /brand-tagline -->
 
-                     <i
-                        class="fa-solid fa-arrow-right"
-                        aria-hidden="true"
-                     ></i>
-                  </a>
+         </div>
+         <!-- /brand-text -->
 
-               </div>
-               <!-- /mobile-nav-links -->
-
-
-               <!-- =====================================
-                  Mobile CTA
-                  ===================================== -->
-               <div class="mobile-nav-action">
-
-                  <a
-                     href="#contact"
-                     class="mobile-nav-cta flex items-center justify-between rounded-xl"
-                  >
-
-                     <span>
-                        Start a Project
-                     </span>
-
-                     <span aria-hidden="true">
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                     </span>
-
-                  </a>
-
-               </div>
-               <!-- /mobile-nav-action -->
+      </a>
+      <!-- /brand -->
 
 
-               <!-- =====================================
-                  Mobile Contact Status
-                  ===================================== -->
-               <div class="mobile-nav-status flex items-center gap-2">
+      <!-- =================================================
+           DESKTOP NAVIGATION
+      ================================================== -->
+      <nav
+         class="hidden items-center gap-1 lg:flex"
+         aria-label="Main navigation"
+      >
 
-                  <span
-                     class="contact-status h-2 w-2 rounded-full"
-                     aria-hidden="true"
-                  ></span>
+         <!-- Home -->
+         <a
+            href="#home"
+            class="group relative rounded-full px-4 py-2.5
+                   text-[12px] font-medium tracking-wide
+                   text-white/55
+                   transition-all duration-300
+                   hover:bg-white/[0.035]
+                   hover:text-white"
+         >
 
-                  <span>
-                     Available for new projects
-                  </span>
+            <span>Home</span>
 
-               </div>
-               <!-- /mobile-nav-status -->
+            <!-- Active indicator -->
+            <span
+               class="absolute bottom-0 left-1/2 h-px w-0
+                      -translate-x-1/2
+                      bg-[#d4af5a]
+                      shadow-[0_0_10px_rgba(212,175,90,0.7)]
+                      transition-all duration-300
+                      group-hover:w-4"
+            ></span>
 
-            </div>   <!-- /mobile-nav-inner -->
+         </a>
+         <!-- /home -->
 
-         </div>   <!-- /mobileNav -->
 
-      </header>   <!-- /site-header -->
+         <!-- Services -->
+         <a
+            href="#services"
+            class="group relative rounded-full px-4 py-2.5
+                   text-[12px] font-medium tracking-wide
+                   text-white/55
+                   transition-all duration-300
+                   hover:bg-white/[0.035]
+                   hover:text-white"
+         >
+
+            <span>Services</span>
+
+            <span
+               class="absolute bottom-0 left-1/2 h-px w-0
+                      -translate-x-1/2
+                      bg-[#d4af5a]
+                      shadow-[0_0_10px_rgba(212,175,90,0.7)]
+                      transition-all duration-300
+                      group-hover:w-4"
+            ></span>
+
+         </a>
+         <!-- /services -->
+
+
+         <!-- Our Work -->
+         <a
+            href="#work"
+            class="group relative rounded-full px-4 py-2.5
+                   text-[12px] font-medium tracking-wide
+                   text-white/55
+                   transition-all duration-300
+                   hover:bg-white/[0.035]
+                   hover:text-white"
+         >
+
+            <span>Our Work</span>
+
+            <span
+               class="absolute bottom-0 left-1/2 h-px w-0
+                      -translate-x-1/2
+                      bg-[#d4af5a]
+                      shadow-[0_0_10px_rgba(212,175,90,0.7)]
+                      transition-all duration-300
+                      group-hover:w-4"
+            ></span>
+
+         </a>
+         <!-- /our-work -->
+
+
+         <!-- Our Team -->
+         <a
+            href="#team"
+            class="group relative rounded-full px-4 py-2.5
+                   text-[12px] font-medium tracking-wide
+                   text-white/55
+                   transition-all duration-300
+                   hover:bg-white/[0.035]
+                   hover:text-white"
+         >
+
+            <span>Our Team</span>
+
+            <span
+               class="absolute bottom-0 left-1/2 h-px w-0
+                      -translate-x-1/2
+                      bg-[#d4af5a]
+                      shadow-[0_0_10px_rgba(212,175,90,0.7)]
+                      transition-all duration-300
+                      group-hover:w-4"
+            ></span>
+
+         </a>
+         <!-- /our-team -->
+
+
+         <!-- Contact -->
+         <a
+            href="#contact"
+            class="group relative rounded-full px-4 py-2.5
+                   text-[12px] font-medium tracking-wide
+                   text-white/55
+                   transition-all duration-300
+                   hover:bg-white/[0.035]
+                   hover:text-white"
+         >
+
+            <span>Contact</span>
+
+            <span
+               class="absolute bottom-0 left-1/2 h-px w-0
+                      -translate-x-1/2
+                      bg-[#d4af5a]
+                      shadow-[0_0_10px_rgba(212,175,90,0.7)]
+                      transition-all duration-300
+                      group-hover:w-4"
+            ></span>
+
+         </a>
+         <!-- /contact -->
+
+      </nav>
+      <!-- /desktop-navigation -->
+
+
+      <!-- =================================================
+           DESKTOP CTA
+      ================================================== -->
+      <a
+         href="#contact"
+         class="group hidden items-center gap-2.5
+                rounded-full
+                border border-[#d4af5a]/30
+                bg-[#d4af5a]
+                px-5 py-3
+                text-[11px] font-bold uppercase tracking-[0.1em]
+                text-[#090909]
+                shadow-[0_0_25px_rgba(212,175,90,0.08)]
+                transition-all duration-300
+                hover:-translate-y-0.5
+                hover:border-[#e3c477]
+                hover:bg-[#e3c477]
+                hover:shadow-[0_10px_35px_rgba(212,175,90,0.18)]
+                lg:inline-flex"
+      >
+
+         <span>Start a Project</span>
+
+         <i
+            class="fa-solid fa-arrow-right text-[9px]
+                   transition-transform duration-300
+                   group-hover:translate-x-1"
+         ></i>
+
+      </a>
+      <!-- /desktop-cta -->
+
+
+      <!-- =================================================
+           MOBILE MENU BUTTON
+      ================================================== -->
+      <button
+         id="mobile-menu-button"
+         type="button"
+         aria-label="Open navigation menu"
+         aria-expanded="false"
+         aria-controls="mobile-menu"
+         class="group flex h-11 w-11 items-center justify-center
+                rounded-xl
+                border border-white/10
+                bg-white/[0.035]
+                text-white/70
+                transition-all duration-300
+                hover:border-[#d4af5a]/30
+                hover:bg-[#d4af5a]/10
+                hover:text-[#d4af5a]
+                lg:hidden"
+      >
+
+         <i
+            id="mobile-menu-icon"
+            class="fa-solid fa-bars text-sm
+                   transition-transform duration-300"
+         ></i>
+
+      </button>
+      <!-- /mobile-menu-button -->
+
+
+   </div>
+   <!-- /header-inner -->
+
+
+   <!-- =====================================================
+        MOBILE NAVIGATION
+   ====================================================== -->
+   <div
+      id="mobile-menu"
+      class="hidden border-t border-white/[0.07]
+             bg-[#090909]/95
+             px-5 py-5
+             backdrop-blur-xl
+             lg:hidden"
+   >
+
+      <nav
+         class="mx-auto flex max-w-[1440px] flex-col gap-1"
+         aria-label="Mobile navigation"
+      >
+
+         <!-- Mobile Home -->
+         <a
+            href="#home"
+            class="mobile-nav-link group flex items-center justify-between
+                   rounded-2xl px-4 py-4
+                   text-sm font-medium text-white/60
+                   transition-all duration-300
+                   hover:bg-[#d4af5a]/[0.06]
+                   hover:text-white"
+         >
+
+            <span>Home</span>
+
+            <i
+               class="fa-solid fa-arrow-right text-[10px] text-white/20
+                      transition-all duration-300
+                      group-hover:translate-x-1
+                      group-hover:text-[#d4af5a]"
+            ></i>
+
+         </a>
+         <!-- /mobile-home -->
+
+
+         <!-- Mobile Services -->
+         <a
+            href="#services"
+            class="mobile-nav-link group flex items-center justify-between
+                   rounded-2xl px-4 py-4
+                   text-sm font-medium text-white/60
+                   transition-all duration-300
+                   hover:bg-[#d4af5a]/[0.06]
+                   hover:text-white"
+         >
+
+            <span>Services</span>
+
+            <i
+               class="fa-solid fa-arrow-right text-[10px] text-white/20
+                      transition-all duration-300
+                      group-hover:translate-x-1
+                      group-hover:text-[#d4af5a]"
+            ></i>
+
+         </a>
+         <!-- /mobile-services -->
+
+
+         <!-- Mobile Our Work -->
+         <a
+            href="#work"
+            class="mobile-nav-link group flex items-center justify-between
+                   rounded-2xl px-4 py-4
+                   text-sm font-medium text-white/60
+                   transition-all duration-300
+                   hover:bg-[#d4af5a]/[0.06]
+                   hover:text-white"
+         >
+
+            <span>Our Work</span>
+
+            <i
+               class="fa-solid fa-arrow-right text-[10px] text-white/20
+                      transition-all duration-300
+                      group-hover:translate-x-1
+                      group-hover:text-[#d4af5a]"
+            ></i>
+
+         </a>
+         <!-- /mobile-our-work -->
+
+
+         <!-- Mobile Team -->
+         <a
+            href="#team"
+            class="mobile-nav-link group flex items-center justify-between
+                   rounded-2xl px-4 py-4
+                   text-sm font-medium text-white/60
+                   transition-all duration-300
+                   hover:bg-[#d4af5a]/[0.06]
+                   hover:text-white"
+         >
+
+            <span>Our Team</span>
+
+            <i
+               class="fa-solid fa-arrow-right text-[10px] text-white/20
+                      transition-all duration-300
+                      group-hover:translate-x-1
+                      group-hover:text-[#d4af5a]"
+            ></i>
+
+         </a>
+         <!-- /mobile-team -->
+
+
+         <!-- Mobile Contact -->
+         <a
+            href="#contact"
+            class="mobile-nav-link group flex items-center justify-between
+                   rounded-2xl px-4 py-4
+                   text-sm font-medium text-white/60
+                   transition-all duration-300
+                   hover:bg-[#d4af5a]/[0.06]
+                   hover:text-white"
+         >
+
+            <span>Contact</span>
+
+            <i
+               class="fa-solid fa-arrow-right text-[10px] text-white/20
+                      transition-all duration-300
+                      group-hover:translate-x-1
+                      group-hover:text-[#d4af5a]"
+            ></i>
+
+         </a>
+         <!-- /mobile-contact -->
+
+
+         <!-- Mobile CTA -->
+         <a
+            href="#contact"
+            class="mobile-nav-link mt-3 flex items-center justify-center
+                   gap-3 rounded-2xl
+                   bg-[#d4af5a]
+                   px-5 py-4
+                   text-xs font-bold uppercase tracking-[0.12em]
+                   text-[#090909]
+                   transition-all duration-300
+                   hover:bg-[#e3c477]
+                   hover:shadow-[0_10px_30px_rgba(212,175,90,0.15)]"
+         >
+
+            <i class="fa-solid fa-paper-plane text-[10px]"></i>
+
+            <span>Start a Project</span>
+
+         </a>
+         <!-- /mobile-cta -->
+
+      </nav>
+      <!-- /mobile-navigation -->
+
+   </div>
+   <!-- /mobile-menu -->
+
+</header>
+<!-- /fixed-header -->
       <!-- end of section 1 -->
       <!-- ========================================================================================== -->
 
@@ -4377,6 +4542,1169 @@
       </section>
       <!-- /team -->
       <!-- end of section 5 -->
+      <!-- =========================================================================================== -->
+
+      <!-- Start Of Section 6 -->
+      <!-- =========================================================
+         CONTACT SECTION
+         DigitalPro - Let's Build Something Great
+      ========================================================= -->
+      <section
+         id="contact"
+         class="relative isolate overflow-hidden bg-[#090909] px-5 py-24 text-white
+               sm:px-8 sm:py-28
+               lg:px-12 lg:py-32
+               xl:px-16"
+         aria-labelledby="contact-title"
+      >
+
+         <!-- =====================================================
+            AMBIENT GOLD GLOW - TOP LEFT
+         ====================================================== -->
+         <div
+            class="pointer-events-none absolute -left-40 top-0 -z-10 h-96 w-96 rounded-full
+                  bg-[#d4af5a]/10 blur-[140px]"
+            aria-hidden="true"
+         ></div>
+         <!-- /ambient-glow-top-left -->
+
+
+         <!-- =====================================================
+            AMBIENT GOLD GLOW - BOTTOM RIGHT
+         ====================================================== -->
+         <div
+            class="pointer-events-none absolute -right-40 bottom-0 -z-10 h-96 w-96 rounded-full
+                  bg-[#d4af5a]/10 blur-[140px]"
+            aria-hidden="true"
+         ></div>
+         <!-- /ambient-glow-bottom-right -->
+
+
+         <!-- =====================================================
+            SUBTLE GRID BACKGROUND
+         ====================================================== -->
+         <div
+            class="pointer-events-none absolute inset-0 -z-10 opacity-[0.03]
+                  [background-image:linear-gradient(rgba(212,175,90,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(212,175,90,0.8)_1px,transparent_1px)]
+                  [background-size:70px_70px]"
+            aria-hidden="true"
+         ></div>
+         <!-- /grid-background -->
+
+
+         <!-- =====================================================
+            MAIN CONTAINER
+         ====================================================== -->
+         <div class="relative mx-auto max-w-7xl">
+            <!-- /main-container -->
+
+
+            <!-- =================================================
+               SECTION INTRO
+            ================================================== -->
+            <div
+               class="mb-14 max-w-3xl
+                     sm:mb-16
+                     lg:mb-20"
+            >
+
+               <!-- Eyebrow -->
+               <div
+                  class="mb-5 inline-flex items-center gap-2 rounded-full
+                        border border-[#d4af5a]/20
+                        bg-[#d4af5a]/5
+                        px-4 py-2
+                        text-[10px] font-semibold uppercase tracking-[0.28em]
+                        text-[#d4af5a]"
+               >
+
+                  <i class="fa-solid fa-paper-plane text-[10px]"></i>
+
+                  <span>Start A Conversation</span>
+
+               </div>
+               <!-- /contact-eyebrow -->
+
+
+               <!-- Main title -->
+               <h2
+                  id="contact-title"
+                  class="max-w-3xl text-4xl font-semibold leading-[1.05] tracking-[-0.045em]
+                        text-white
+                        sm:text-5xl
+                        lg:text-6xl"
+               >
+                  Let's turn your next idea
+                  <span class="text-[#d4af5a]">into reality.</span>
+               </h2>
+               <!-- /contact-title -->
+
+
+               <!-- Description -->
+               <p
+                  class="mt-6 max-w-2xl text-sm leading-7 text-white/45
+                        sm:text-base sm:leading-8"
+               >
+                  Have a project, a new business idea, or a digital challenge?
+                  Tell us what you're working on and our team will get back to you
+                  with the right next step.
+               </p>
+               <!-- /contact-description -->
+
+            </div>
+            <!-- /section-intro -->
+
+
+            <!-- =================================================
+               CONTACT GRID
+            ================================================== -->
+            <div
+               class="grid grid-cols-1 gap-6
+                     lg:grid-cols-[1.05fr_0.95fr]
+                     lg:gap-8"
+            >
+               <!-- /contact-grid -->
+
+
+               <!-- =================================================
+                  CONTACT FORM
+               ================================================== -->
+               <div
+                  class="group relative overflow-hidden rounded-[2rem]
+                        border border-white/10
+                        bg-white/[0.025]
+                        p-6
+                        transition-all duration-500
+                        hover:border-[#d4af5a]/20
+                        sm:p-8
+                        lg:p-10"
+               >
+
+                  <!-- Card glow -->
+                  <div
+                     class="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full
+                           bg-[#d4af5a]/5 blur-[90px]
+                           transition-all duration-700
+                           group-hover:bg-[#d4af5a]/10"
+                     aria-hidden="true"
+                  ></div>
+                  <!-- /form-card-glow -->
+
+
+                  <!-- Form heading -->
+                  <div class="relative mb-8">
+
+                     <div class="flex items-center gap-3">
+
+                        <div
+                           class="flex h-11 w-11 items-center justify-center rounded-2xl
+                                 border border-[#d4af5a]/20
+                                 bg-[#d4af5a]/5
+                                 text-[#d4af5a]"
+                        >
+                           <i class="fa-solid fa-message"></i>
+                        </div>
+
+                        <div>
+
+                           <h3
+                              class="text-xl font-semibold tracking-[-0.02em] text-white"
+                           >
+                              Tell us about your project
+                           </h3>
+
+                           <p class="mt-1 text-xs text-white/35">
+                              We usually respond within one business day.
+                           </p>
+
+                        </div>
+
+                     </div>
+
+                  </div>
+                  <!-- /form-heading -->
+
+
+                  <!-- =================================================
+                     FORM
+                  ================================================== -->
+                  <form
+                     action="#"
+                     method="POST"
+                     class="relative space-y-5"
+                  >
+
+                     <!-- Name + Email -->
+                     <div
+                        class="grid grid-cols-1 gap-5
+                              sm:grid-cols-2"
+                     >
+
+                        <!-- Full Name -->
+                        <div>
+
+                           <label
+                              for="full-name"
+                              class="mb-2 block text-[11px] font-semibold uppercase
+                                    tracking-[0.16em] text-white/45"
+                           >
+                              Full Name
+                           </label>
+
+                           <div class="relative">
+
+                              <i
+                                 class="fa-solid fa-user pointer-events-none absolute left-4 top-1/2
+                                       -translate-y-1/2 text-xs text-white/25
+                                       transition-colors duration-300
+                                       peer-focus:text-[#d4af5a]"
+                              ></i>
+
+                              <input
+                                 id="full-name"
+                                 name="full_name"
+                                 type="text"
+                                 autocomplete="name"
+                                 placeholder="Your name"
+                                 required
+                                 class="peer w-full rounded-2xl border border-white/10
+                                       bg-white/[0.035] py-4 pl-11 pr-4
+                                       text-sm text-white
+                                       outline-none
+                                       placeholder:text-white/20
+                                       transition-all duration-300
+                                       focus:border-[#d4af5a]/50
+                                       focus:bg-[#d4af5a]/[0.035]
+                                       focus:ring-4 focus:ring-[#d4af5a]/5"
+                              />
+
+                           </div>
+
+                        </div>
+                        <!-- /full-name -->
+
+
+                        <!-- Email -->
+                        <div>
+
+                           <label
+                              for="email"
+                              class="mb-2 block text-[11px] font-semibold uppercase
+                                    tracking-[0.16em] text-white/45"
+                           >
+                              Email Address
+                           </label>
+
+                           <div class="relative">
+
+                              <i
+                                 class="fa-solid fa-envelope pointer-events-none absolute left-4 top-1/2
+                                       -translate-y-1/2 text-xs text-white/25
+                                       transition-colors duration-300
+                                       peer-focus:text-[#d4af5a]"
+                              ></i>
+
+                              <input
+                                 id="email"
+                                 name="email"
+                                 type="email"
+                                 autocomplete="email"
+                                 placeholder="you@example.com"
+                                 required
+                                 class="peer w-full rounded-2xl border border-white/10
+                                       bg-white/[0.035] py-4 pl-11 pr-4
+                                       text-sm text-white
+                                       outline-none
+                                       placeholder:text-white/20
+                                       transition-all duration-300
+                                       focus:border-[#d4af5a]/50
+                                       focus:bg-[#d4af5a]/[0.035]
+                                       focus:ring-4 focus:ring-[#d4af5a]/5"
+                              />
+
+                           </div>
+
+                        </div>
+                        <!-- /email -->
+
+                     </div>
+                     <!-- /name-email-row -->
+
+
+                     <!-- Company -->
+                     <div>
+
+                        <label
+                           for="company"
+                           class="mb-2 block text-[11px] font-semibold uppercase
+                                 tracking-[0.16em] text-white/45"
+                        >
+                           Company / Brand
+                        </label>
+
+                        <div class="relative">
+
+                           <i
+                              class="fa-solid fa-building pointer-events-none absolute left-4 top-1/2
+                                    -translate-y-1/2 text-xs text-white/25"
+                           ></i>
+
+                           <input
+                              id="company"
+                              name="company"
+                              type="text"
+                              autocomplete="organization"
+                              placeholder="Your company or brand"
+                              class="w-full rounded-2xl border border-white/10
+                                    bg-white/[0.035] py-4 pl-11 pr-4
+                                    text-sm text-white
+                                    outline-none
+                                    placeholder:text-white/20
+                                    transition-all duration-300
+                                    focus:border-[#d4af5a]/50
+                                    focus:bg-[#d4af5a]/[0.035]
+                                    focus:ring-4 focus:ring-[#d4af5a]/5"
+                           />
+
+                        </div>
+
+                     </div>
+                     <!-- /company -->
+
+
+                     <!-- Project Type -->
+                     <div>
+
+                        <label
+                           for="project-type"
+                           class="mb-2 block text-[11px] font-semibold uppercase
+                                 tracking-[0.16em] text-white/45"
+                        >
+                           What do you need?
+                        </label>
+
+                        <div class="relative">
+
+                           <i
+                              class="fa-solid fa-layer-group pointer-events-none absolute left-4 top-1/2
+                                    -translate-y-1/2 text-xs text-white/25"
+                           ></i>
+
+                           <select
+                              id="project-type"
+                              name="project_type"
+                              required
+                              class="w-full appearance-none rounded-2xl border border-white/10
+                                    bg-[#111111] py-4 pl-11 pr-10
+                                    text-sm text-white/70
+                                    outline-none
+                                    transition-all duration-300
+                                    focus:border-[#d4af5a]/50
+                                    focus:ring-4 focus:ring-[#d4af5a]/5"
+                           >
+                              <option value="" disabled selected>
+                                 Select a service
+                              </option>
+                              <option value="web-development">
+                                 Web Design & Development
+                              </option>
+                              <option value="digital-marketing">
+                                 Performance Marketing
+                              </option>
+                              <option value="seo">
+                                 SEO & Organic Growth
+                              </option>
+                              <option value="branding">
+                                 Brand Identity & Creative
+                              </option>
+                              <option value="ai">
+                                 AI Automation & Solutions
+                              </option>
+                              <option value="strategy">
+                                 Digital Strategy & Consulting
+                              </option>
+                           </select>
+
+                           <i
+                              class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2
+                                    -translate-y-1/2 text-[10px] text-white/25"
+                           ></i>
+
+                        </div>
+
+                     </div>
+                     <!-- /project-type -->
+
+
+                     <!-- Message -->
+                     <div>
+
+                        <label
+                           for="message"
+                           class="mb-2 block text-[11px] font-semibold uppercase
+                                 tracking-[0.16em] text-white/45"
+                        >
+                           Project Details
+                        </label>
+
+                        <div class="relative">
+
+                           <i
+                              class="fa-solid fa-pen pointer-events-none absolute left-4 top-5
+                                    text-xs text-white/25"
+                           ></i>
+
+                           <textarea
+                              id="message"
+                              name="message"
+                              rows="5"
+                              required
+                              placeholder="Tell us about your goals, timeline, and what you'd like to build..."
+                              class="w-full resize-none rounded-2xl border border-white/10
+                                    bg-white/[0.035] py-4 pl-11 pr-4
+                                    text-sm leading-6 text-white
+                                    outline-none
+                                    placeholder:text-white/20
+                                    transition-all duration-300
+                                    focus:border-[#d4af5a]/50
+                                    focus:bg-[#d4af5a]/[0.035]
+                                    focus:ring-4 focus:ring-[#d4af5a]/5"
+                           ></textarea>
+
+                        </div>
+
+                     </div>
+                     <!-- /message -->
+
+
+                     <!-- Submit -->
+                     <button
+                        type="submit"
+                        class="group/submit inline-flex w-full items-center
+                              justify-center gap-3 rounded-2xl
+                              bg-[#d4af5a] px-6 py-4
+                              text-xs font-bold uppercase tracking-[0.16em]
+                              text-[#090909]
+                              transition-all duration-300
+                              hover:-translate-y-1
+                              hover:bg-[#e3c477]
+                              hover:shadow-[0_15px_40px_rgba(212,175,90,0.18)]
+                              active:translate-y-0"
+                     >
+
+                        <span>Send Project Inquiry</span>
+
+                        <i
+                           class="fa-solid fa-arrow-right text-[10px]
+                                 transition-transform duration-300
+                                 group-hover/submit:translate-x-1"
+                        ></i>
+
+                     </button>
+                     <!-- /submit-button -->
+
+
+                     <!-- Privacy -->
+                     <p
+                        class="flex items-center justify-center gap-2
+                              text-center text-[10px] text-white/25"
+                     >
+
+                        <i class="fa-solid fa-lock text-[9px] text-[#d4af5a]/60"></i>
+
+                        Your information stays private and is only used to respond
+                        to your inquiry.
+
+                     </p>
+                     <!-- /privacy -->
+
+                  </form>
+                  <!-- /contact-form -->
+
+               </div>
+               <!-- /contact-form-card -->
+
+
+               <!-- =================================================
+                  CONTACT INFORMATION
+               ================================================== -->
+               <div class="flex flex-col gap-6">
+
+                  <!-- Contact information -->
+                  <div
+                     class="rounded-[2rem] border border-white/10
+                           bg-white/[0.025] p-6
+                           sm:p-8"
+                  >
+
+                     <!-- Heading -->
+                     <div class="mb-7">
+
+                        <div
+                           class="flex h-11 w-11 items-center justify-center rounded-2xl
+                                 border border-[#d4af5a]/20
+                                 bg-[#d4af5a]/5
+                                 text-[#d4af5a]"
+                        >
+                           <i class="fa-solid fa-address-card"></i>
+                        </div>
+
+                        <h3
+                           class="mt-5 text-2xl font-semibold tracking-[-0.03em]"
+                        >
+                           Contact Information
+                        </h3>
+
+                        <p class="mt-2 text-sm leading-6 text-white/35">
+                           Prefer a direct conversation? Reach our team through
+                           any of the channels below.
+                        </p>
+
+                     </div>
+                     <!-- /contact-info-heading -->
+
+
+                     <!-- Contact items -->
+                     <div class="space-y-3">
+
+                        <!-- Location -->
+                        <a
+                           href="#"
+                           class="group/contact flex items-center gap-4 rounded-2xl
+                                 border border-transparent p-4
+                                 transition-all duration-300
+                                 hover:border-[#d4af5a]/15
+                                 hover:bg-[#d4af5a]/[0.035]"
+                        >
+
+                           <div
+                              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl
+                                    border border-white/10
+                                    bg-white/[0.035]
+                                    text-[#d4af5a]
+                                    transition-all duration-300
+                                    group-hover/contact:border-[#d4af5a]/30
+                                    group-hover/contact:bg-[#d4af5a]/10"
+                           >
+                              <i class="fa-solid fa-location-dot"></i>
+                           </div>
+
+                           <div>
+
+                              <p
+                                 class="text-[10px] font-semibold uppercase
+                                       tracking-[0.16em] text-white/30"
+                              >
+                                 Studio
+                              </p>
+
+                              <p
+                                 class="mt-1 text-sm font-semibold text-white/80"
+                              >
+                                 Cairo, Egypt
+                              </p>
+
+                           </div>
+
+                        </a>
+                        <!-- /location -->
+
+
+                        <!-- Phone -->
+                        <a
+                           href="tel:+201000000000"
+                           class="group/contact flex items-center gap-4 rounded-2xl
+                                 border border-transparent p-4
+                                 transition-all duration-300
+                                 hover:border-[#d4af5a]/15
+                                 hover:bg-[#d4af5a]/[0.035]"
+                        >
+
+                           <div
+                              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl
+                                    border border-white/10
+                                    bg-white/[0.035]
+                                    text-[#d4af5a]
+                                    transition-all duration-300
+                                    group-hover/contact:border-[#d4af5a]/30
+                                    group-hover/contact:bg-[#d4af5a]/10"
+                           >
+                              <i class="fa-solid fa-phone"></i>
+                           </div>
+
+                           <div>
+
+                              <p
+                                 class="text-[10px] font-semibold uppercase
+                                       tracking-[0.16em] text-white/30"
+                              >
+                                 Phone
+                              </p>
+
+                              <p
+                                 class="mt-1 text-sm font-semibold text-white/80"
+                              >
+                                 +20 100 000 0000
+                              </p>
+
+                           </div>
+
+                        </a>
+                        <!-- /phone -->
+
+
+                        <!-- Email -->
+                        <a
+                           href="mailto:hello@digitalpro.agency"
+                           class="group/contact flex items-center gap-4 rounded-2xl
+                                 border border-transparent p-4
+                                 transition-all duration-300
+                                 hover:border-[#d4af5a]/15
+                                 hover:bg-[#d4af5a]/[0.035]"
+                        >
+
+                           <div
+                              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl
+                                    border border-white/10
+                                    bg-white/[0.035]
+                                    text-[#d4af5a]
+                                    transition-all duration-300
+                                    group-hover/contact:border-[#d4af5a]/30
+                                    group-hover/contact:bg-[#d4af5a]/10"
+                           >
+                              <i class="fa-solid fa-envelope"></i>
+                           </div>
+
+                           <div>
+
+                              <p
+                                 class="text-[10px] font-semibold uppercase
+                                       tracking-[0.16em] text-white/30"
+                              >
+                                 Email
+                              </p>
+
+                              <p
+                                 class="mt-1 text-sm font-semibold text-white/80"
+                              >
+                                 hello@digitalpro.agency
+                              </p>
+
+                           </div>
+
+                        </a>
+                        <!-- /email -->
+
+
+                        <!-- Working hours -->
+                        <div
+                           class="group/contact flex items-center gap-4 rounded-2xl
+                                 border border-transparent p-4
+                                 transition-all duration-300
+                                 hover:border-[#d4af5a]/15
+                                 hover:bg-[#d4af5a]/[0.035]"
+                        >
+
+                           <div
+                              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl
+                                    border border-white/10
+                                    bg-white/[0.035]
+                                    text-[#d4af5a]
+                                    transition-all duration-300
+                                    group-hover/contact:border-[#d4af5a]/30
+                                    group-hover/contact:bg-[#d4af5a]/10"
+                           >
+                              <i class="fa-solid fa-clock"></i>
+                           </div>
+
+                           <div>
+
+                              <p
+                                 class="text-[10px] font-semibold uppercase
+                                       tracking-[0.16em] text-white/30"
+                              >
+                                 Working Hours
+                              </p>
+
+                              <p
+                                 class="mt-1 text-sm font-semibold text-white/80"
+                              >
+                                 Sun – Thu · 9:00 AM – 6:00 PM
+                              </p>
+
+                           </div>
+
+                        </div>
+                        <!-- /working-hours -->
+
+                     </div>
+                     <!-- /contact-items -->
+
+                  </div>
+                  <!-- /contact-information -->
+
+
+                  <!-- =================================================
+                     LOCATION / MAP CARD
+                  ================================================== -->
+                  <div
+                     class="group relative min-h-[250px] overflow-hidden rounded-[2rem]
+                           border border-white/10
+                           bg-[#0d0d0d]"
+                  >
+
+                     <!-- Map grid -->
+                     <div
+                        class="absolute inset-0 opacity-[0.08]
+                              [background-image:linear-gradient(rgba(212,175,90,0.7)_1px,transparent_1px),linear-gradient(90deg,rgba(212,175,90,0.7)_1px,transparent_1px)]
+                              [background-size:45px_45px]"
+                        aria-hidden="true"
+                     ></div>
+                     <!-- /map-grid -->
+
+
+                     <!-- Map lines -->
+                     <div
+                        class="absolute left-[-10%] top-1/2 h-px w-[120%] rotate-12
+                              bg-[#d4af5a]/10"
+                        aria-hidden="true"
+                     ></div>
+
+                     <div
+                        class="absolute left-[-10%] top-[35%] h-px w-[120%] -rotate-12
+                              bg-[#d4af5a]/10"
+                        aria-hidden="true"
+                     ></div>
+
+                     <div
+                        class="absolute left-1/2 top-[-20%] h-[140%] w-px rotate-[28deg]
+                              bg-[#d4af5a]/10"
+                        aria-hidden="true"
+                     ></div>
+                     <!-- /map-lines -->
+
+
+                     <!-- Central location -->
+                     <div
+                        class="absolute left-1/2 top-1/2 flex -translate-x-1/2
+                              -translate-y-1/2 flex-col items-center"
+                     >
+
+                        <!-- Pulse -->
+                        <div
+                           class="absolute h-24 w-24 animate-pulse rounded-full
+                                 border border-[#d4af5a]/10
+                                 bg-[#d4af5a]/5"
+                        ></div>
+                        <!-- /map-pulse -->
+
+
+                        <!-- Pin -->
+                        <div
+                           class="relative flex h-14 w-14 items-center justify-center
+                                 rounded-2xl
+                                 bg-[#d4af5a]
+                                 text-[#090909]
+                                 shadow-[0_0_40px_rgba(212,175,90,0.25)]
+                                 transition-transform duration-500
+                                 group-hover:scale-110"
+                        >
+                           <i class="fa-solid fa-location-dot text-xl"></i>
+                        </div>
+                        <!-- /map-pin -->
+
+
+                        <div
+                           class="mt-4 rounded-full border border-white/10
+                                 bg-black/50 px-4 py-2 backdrop-blur-md"
+                        >
+
+                           <span
+                              class="text-[10px] font-semibold uppercase
+                                    tracking-[0.2em] text-white/70"
+                           >
+                              Cairo · Egypt
+                           </span>
+
+                        </div>
+                        <!-- /location-label -->
+
+                     </div>
+                     <!-- /central-location -->
+
+
+                     <!-- Map caption -->
+                     <div
+                        class="absolute bottom-5 left-5 right-5 flex items-center
+                              justify-between"
+                     >
+
+                        <div>
+
+                           <p
+                              class="text-[9px] font-semibold uppercase
+                                    tracking-[0.18em] text-[#d4af5a]"
+                           >
+                              DigitalPro Studio
+                           </p>
+
+                           <p class="mt-1 text-xs text-white/35">
+                              Building digital experiences worldwide
+                           </p>
+
+                        </div>
+
+                        <i
+                           class="fa-solid fa-arrow-up-right-from-square text-xs text-white/25"
+                        ></i>
+
+                     </div>
+                     <!-- /map-caption -->
+
+                  </div>
+                  <!-- /location-card -->
+
+               </div>
+               <!-- /contact-information-column -->
+
+            </div>
+            <!-- /contact-grid -->
+
+
+            <!-- =================================================
+               FINAL CTA STRIP
+            ================================================== -->
+            <div
+               class="relative mt-8 overflow-hidden rounded-[2rem]
+                     border border-[#d4af5a]/20
+                     bg-[#d4af5a]/[0.045]
+                     px-6 py-8
+                     sm:px-8
+                     lg:px-10"
+            >
+
+               <!-- CTA glow -->
+               <div
+                  class="pointer-events-none absolute -right-20 -top-20 h-48 w-48
+                        rounded-full bg-[#d4af5a]/10 blur-[80px]"
+                  aria-hidden="true"
+               ></div>
+               <!-- /cta-glow -->
+
+
+               <div
+                  class="relative flex flex-col gap-6
+                        lg:flex-row lg:items-center lg:justify-between"
+               >
+
+                  <!-- CTA text -->
+                  <div>
+
+                     <div
+                        class="flex items-center gap-2 text-[#d4af5a]"
+                     >
+
+                        <i class="fa-solid fa-bolt text-xs"></i>
+
+                        <span
+                           class="text-[10px] font-bold uppercase tracking-[0.2em]"
+                        >
+                           Ready when you are
+                        </span>
+
+                     </div>
+
+                     <h3
+                        class="mt-3 text-2xl font-semibold tracking-[-0.03em]
+                              text-white
+                              sm:text-3xl"
+                     >
+                        Your next growth story starts here.
+                     </h3>
+
+                     <p
+                        class="mt-2 max-w-xl text-sm leading-6 text-white/35"
+                     >
+                        From the first idea to measurable results,
+                        we'll help you turn ambition into digital impact.
+                     </p>
+
+                  </div>
+                  <!-- /cta-text -->
+
+
+                  <!-- CTA -->
+                  <a
+                     href="mailto:hello@digitalpro.agency"
+                     class="group/final inline-flex shrink-0 items-center justify-center
+                           gap-3 rounded-full
+                           bg-[#d4af5a] px-7 py-4
+                           text-xs font-bold uppercase tracking-[0.14em]
+                           text-[#090909]
+                           transition-all duration-300
+                           hover:-translate-y-1
+                           hover:bg-[#e3c477]
+                           hover:shadow-[0_15px_45px_rgba(212,175,90,0.2)]"
+                  >
+
+                     <i class="fa-solid fa-paper-plane text-[10px]"></i>
+
+                     <span>Start Your Project</span>
+
+                     <i
+                        class="fa-solid fa-arrow-right text-[10px]
+                              transition-transform duration-300
+                              group-hover/final:translate-x-1"
+                     ></i>
+
+                  </a>
+                  <!-- /final-cta -->
+
+               </div>
+               <!-- /cta-content -->
+
+            </div>
+            <!-- /final-cta-strip -->
+
+
+         </div>
+         <!-- /main-container -->
+
+
+         <!-- =====================================================
+            FOOTER
+         ====================================================== -->
+         <footer
+            class="relative mx-auto mt-20 max-w-7xl border-t border-white/10 pt-8"
+         >
+
+            <div
+               class="flex flex-col gap-8
+                     lg:flex-row lg:items-center lg:justify-between"
+            >
+
+               <!-- =================================================
+                  FOOTER BRAND
+               ================================================== -->
+               <div class="max-w-sm">
+
+                  <a
+                     href="#home"
+                     class="inline-flex items-center gap-3"
+                  >
+
+                     <!-- Logo mark -->
+                     <span
+                        class="flex h-9 w-9 items-center justify-center rounded-xl
+                              bg-[#d4af5a]
+                              text-sm font-black text-[#090909]"
+                     >
+                        DP
+                     </span>
+                     <!-- /logo-mark -->
+
+
+                     <span
+                        class="text-lg font-bold tracking-[-0.03em] text-white"
+                     >
+                        Digital<span class="text-[#d4af5a]">Pro</span>
+                     </span>
+
+                  </a>
+                  <!-- /footer-logo -->
+
+
+                  <p
+                     class="mt-4 text-xs leading-6 text-white/30"
+                  >
+                     Strategy, design, technology, and growth —
+                     creating digital experiences that move businesses forward.
+                  </p>
+                  <!-- /footer-description -->
+
+               </div>
+               <!-- /footer-brand -->
+
+
+               <!-- =================================================
+                  FOOTER NAVIGATION
+               ================================================== -->
+               <nav
+                  class="flex flex-wrap gap-x-6 gap-y-3"
+                  aria-label="Footer navigation"
+               >
+
+                  <a
+                     href="#home"
+                     class="text-xs text-white/35 transition-colors
+                           hover:text-[#d4af5a]"
+                  >
+                     Home
+                  </a>
+
+                  <a
+                     href="#services"
+                     class="text-xs text-white/35 transition-colors
+                           hover:text-[#d4af5a]"
+                  >
+                     Services
+                  </a>
+
+                  <a
+                     href="#work"
+                     class="text-xs text-white/35 transition-colors
+                           hover:text-[#d4af5a]"
+                  >
+                     Our Work
+                  </a>
+
+                  <a
+                     href="#team"
+                     class="text-xs text-white/35 transition-colors
+                           hover:text-[#d4af5a]"
+                  >
+                     Our Team
+                  </a>
+
+                  <a
+                     href="#contact"
+                     class="text-xs text-white/35 transition-colors
+                           hover:text-[#d4af5a]"
+                  >
+                     Contact
+                  </a>
+
+               </nav>
+               <!-- /footer-navigation -->
+
+
+               <!-- =================================================
+                  SOCIAL LINKS
+               ================================================== -->
+               <div class="flex items-center gap-2">
+
+                  <!-- LinkedIn -->
+                  <a
+                     href="#"
+                     aria-label="LinkedIn"
+                     class="flex h-10 w-10 items-center justify-center rounded-full
+                           border border-white/10
+                           bg-white/[0.025]
+                           text-white/40
+                           transition-all duration-300
+                           hover:-translate-y-1
+                           hover:border-[#d4af5a]/40
+                           hover:bg-[#d4af5a]
+                           hover:text-[#090909]"
+                  >
+                     <i class="fa-brands fa-linkedin-in text-xs"></i>
+                  </a>
+                  <!-- /linkedin -->
+
+
+                  <!-- Instagram -->
+                  <a
+                     href="#"
+                     aria-label="Instagram"
+                     class="flex h-10 w-10 items-center justify-center rounded-full
+                           border border-white/10
+                           bg-white/[0.025]
+                           text-white/40
+                           transition-all duration-300
+                           hover:-translate-y-1
+                           hover:border-[#d4af5a]/40
+                           hover:bg-[#d4af5a]
+                           hover:text-[#090909]"
+                  >
+                     <i class="fa-brands fa-instagram text-xs"></i>
+                  </a>
+                  <!-- /instagram -->
+
+
+                  <!-- Facebook -->
+                  <a
+                     href="#"
+                     aria-label="Facebook"
+                     class="flex h-10 w-10 items-center justify-center rounded-full
+                           border border-white/10
+                           bg-white/[0.025]
+                           text-white/40
+                           transition-all duration-300
+                           hover:-translate-y-1
+                           hover:border-[#d4af5a]/40
+                           hover:bg-[#d4af5a]
+                           hover:text-[#090909]"
+                  >
+                     <i class="fa-brands fa-facebook-f text-xs"></i>
+                  </a>
+                  <!-- /facebook -->
+
+
+                  <!-- X -->
+                  <a
+                     href="#"
+                     aria-label="X"
+                     class="flex h-10 w-10 items-center justify-center rounded-full
+                           border border-white/10
+                           bg-white/[0.025]
+                           text-white/40
+                           transition-all duration-300
+                           hover:-translate-y-1
+                           hover:border-[#d4af5a]/40
+                           hover:bg-[#d4af5a]
+                           hover:text-[#090909]"
+                  >
+                     <i class="fa-brands fa-x-twitter text-xs"></i>
+                  </a>
+                  <!-- /x -->
+
+               </div>
+               <!-- /social-links -->
+
+            </div>
+            <!-- /footer-top -->
+
+
+            <!-- =================================================
+               COPYRIGHT
+            ================================================== -->
+            <div
+               class="mt-8 flex flex-col gap-3 border-t border-white/5 pt-6
+                     text-[10px] text-white/25
+                     sm:flex-row sm:items-center sm:justify-between"
+            >
+
+               <p>
+                  © 2026 DigitalPro. All rights reserved.
+               </p>
+
+               <div class="flex items-center gap-5">
+
+                  <a
+                     href="#"
+                     class="transition-colors hover:text-[#d4af5a]"
+                  >
+                     Privacy Policy
+                  </a>
+
+                  <a
+                     href="#"
+                     class="transition-colors hover:text-[#d4af5a]"
+                  >
+                     Terms of Service
+                  </a>
+
+               </div>
+
+            </div>
+            <!-- /copyright -->
+
+         </footer>
+         <!-- /footer -->
+
+      </section>
+      <!-- /contact -->
+      <!-- end of section 6 -->
       <!-- =========================================================================================== -->
       <script src="js/script.js"></script>
    </body>
