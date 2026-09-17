@@ -1,0 +1,2826 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+      <!-- ============================================================
+         1. DOCUMENT METADATA
+         ============================================================ -->
+
+      <!-- Character Encoding -->
+      <meta charset="UTF-8">
+
+      <!-- Responsive Viewport -->
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      >
+
+      <!-- Browser Compatibility -->
+      <meta
+         http-equiv="X-UA-Compatible"
+         content="IE=edge"
+      >
+
+
+      <!-- ============================================================
+         2. PAGE TITLE
+         ============================================================ -->
+
+      <title>
+         DigitalPro - Digital Marketing
+      </title>
+
+
+      <!-- ============================================================
+         3. FAVICON / BROWSER TAB ICON
+         ============================================================ -->
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+      <!-- ============================================================
+         5. MAIN STYLES
+         ============================================================ -->
+
+      <!-- Main CSS File -->
+      <link
+         rel="stylesheet"
+         href="css/style.css"
+      >
+
+      <!-- Font Awesome Icons -->
+      <link
+         rel="stylesheet"
+         href="css/all.css"
+      >
+   </head>
+
+   <body>
+      <!-- Section 1 : Navigation Bar (Navbar Section-Header) -->
+      <!-- =========================================
+         Section 1 : Navigation Bar
+         ========================================= -->
+      <header class="site-header">
+
+         <!-- Main Navigation -->
+         <nav
+            class="navbar mx-auto flex min-h-[88px] w-full items-center justify-between px-5
+                  sm:px-8 lg:px-12 xl:max-w-[1440px]"
+            aria-label="Main Navigation"
+         >
+
+            <!-- =========================================
+               Brand / Logo
+               ========================================= -->
+            <a
+               href="#home"
+               class="navbar-brand flex shrink-0 items-center gap-3"
+               aria-label="DigitalPro Home"
+            >
+
+               <!-- Brand Icon -->
+               <div
+                  class="brand-logo flex h-11 w-11 items-center justify-center rounded-xl"
+                  aria-hidden="true"
+               >
+                  <span class="brand-logo-text text-lg font-bold">
+                     DP
+                  </span>
+               </div>
+               <!-- /brand-logo -->
+
+
+               <!-- Brand Information -->
+               <div class="brand-content flex flex-col">
+
+                  <span class="brand-name text-xl font-bold leading-tight sm:text-2xl">
+                     Digital<span>Pro</span>
+                  </span>
+
+                  <span class="brand-tagline hidden text-xs sm:block">
+                     Creative Digital Agency
+                  </span>
+
+               </div>
+               <!-- /brand-content -->
+
+            </a>
+            <!-- /navbar-brand -->
+
+
+            <!-- =========================================
+               Desktop Navigation
+               ========================================= -->
+            <div
+               class="desktop-nav hidden items-center gap-7 lg:flex xl:gap-10"
+               aria-label="Desktop Navigation"
+            >
+
+               <a
+                  href="#home"
+                  class="nav-link active whitespace-nowrap text-sm font-medium xl:text-base"
+                  aria-current="page"
+               >
+                  Home
+               </a>
+
+               <a
+                  href="#services"
+                  class="nav-link whitespace-nowrap text-sm font-medium xl:text-base"
+               >
+                  Services
+               </a>
+
+               <a
+                  href="#work"
+                  class="nav-link whitespace-nowrap text-sm font-medium xl:text-base"
+               >
+                  Our Work
+               </a>
+
+               <a
+                  href="#about"
+                  class="nav-link whitespace-nowrap text-sm font-medium xl:text-base"
+               >
+                  About Us
+               </a>
+
+               <a
+                  href="#team"
+                  class="nav-link whitespace-nowrap text-sm font-medium xl:text-base"
+               >
+                  Our Team
+               </a>
+
+            </div>
+            <!-- /desktop-nav -->
+
+
+            <!-- =========================================
+               Navigation Actions
+               ========================================= -->
+            <div class="navbar-actions flex shrink-0 items-center gap-3 sm:gap-4">
+
+
+               <!-- =====================================
+                  Let's Talk
+                  Desktop / Large Screens
+                  ===================================== -->
+               <a
+                  href="#contact"
+                  class="contact-link hidden items-center gap-2 whitespace-nowrap text-sm font-medium xl:flex"
+               >
+
+                  <span
+                     class="contact-status h-2 w-2 rounded-full"
+                     aria-hidden="true"
+                  ></span>
+
+                  <span class="contact-text">
+                     Let's Talk
+                  </span>
+
+               </a>
+               <!-- /contact-link -->
+
+
+               <!-- =====================================
+                  Start a Project CTA
+                  ===================================== -->
+               <a
+                  href="#contact"
+                  class="nav-cta hidden items-center gap-2 whitespace-nowrap rounded-xl
+                        px-5 py-3 text-sm font-semibold sm:flex lg:px-6 xl:text-base"
+               >
+
+                  <span class="cta-text">
+                     Start a Project
+                  </span>
+
+                  <span class="cta-arrow" aria-hidden="true">
+                     <i class="fa-solid fa-arrow-right-long"></i>
+                  </span>
+
+               </a>
+               <!-- /nav-cta -->
+
+
+               <!-- =====================================
+                  Mobile Menu Button
+                  ===================================== -->
+               <button
+                  class="mobile-menu-btn flex h-11 w-11 flex-col items-center justify-center
+                        gap-1.5 rounded-xl lg:hidden"
+                  type="button"
+                  id="mobileMenuBtn"
+                  aria-label="Open navigation menu"
+                  aria-expanded="false"
+                  aria-controls="mobileNav"
+               >
+
+                  <span
+                     class="menu-line block h-[2px] w-5"
+                     aria-hidden="true"
+                  ></span>
+
+                  <span
+                     class="menu-line block h-[2px] w-5"
+                     aria-hidden="true"
+                  ></span>
+
+                  <span
+                     class="menu-line block h-[2px] w-5"
+                     aria-hidden="true"
+                  ></span>
+
+               </button>
+               <!-- /mobile-menu-btn -->
+
+            </div>
+            <!-- /navbar-actions -->
+
+         </nav>
+         <!-- /navbar -->
+
+
+         <!-- =========================================
+            Mobile Navigation
+            ========================================= -->
+         <div
+            id="mobileNav"
+            class="mobile-nav hidden lg:hidden"
+            aria-hidden="true"
+         >
+
+            <div class="mobile-nav-inner mx-auto w-full px-5 sm:px-8">
+
+               <!-- Mobile Navigation Links -->
+               <div class="mobile-nav-links flex flex-col">
+
+                  <a
+                     href="#home"
+                     class="mobile-nav-link active"
+                     aria-current="page"
+                  >
+                     <span>Home</span>
+
+                     <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true"
+                     ></i>
+                  </a>
+
+
+                  <a
+                     href="#services"
+                     class="mobile-nav-link"
+                  >
+                     <span>Services</span>
+
+                     <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true"
+                     ></i>
+                  </a>
+
+
+                  <a
+                     href="#work"
+                     class="mobile-nav-link"
+                  >
+                     <span>Our Work</span>
+
+                     <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true"
+                     ></i>
+                  </a>
+
+
+                  <a
+                     href="#about"
+                     class="mobile-nav-link"
+                  >
+                     <span>About Us</span>
+
+                     <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true"
+                     ></i>
+                  </a>
+
+
+                  <a
+                     href="#team"
+                     class="mobile-nav-link"
+                  >
+                     <span>Our Team</span>
+
+                     <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true"
+                     ></i>
+                  </a>
+
+
+                  <a
+                     href="#contact"
+                     class="mobile-nav-link"
+                  >
+                     <span>Contact</span>
+
+                     <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true"
+                     ></i>
+                  </a>
+
+               </div>
+               <!-- /mobile-nav-links -->
+
+
+               <!-- =====================================
+                  Mobile CTA
+                  ===================================== -->
+               <div class="mobile-nav-action">
+
+                  <a
+                     href="#contact"
+                     class="mobile-nav-cta flex items-center justify-between rounded-xl"
+                  >
+
+                     <span>
+                        Start a Project
+                     </span>
+
+                     <span aria-hidden="true">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                     </span>
+
+                  </a>
+
+               </div>
+               <!-- /mobile-nav-action -->
+
+
+               <!-- =====================================
+                  Mobile Contact Status
+                  ===================================== -->
+               <div class="mobile-nav-status flex items-center gap-2">
+
+                  <span
+                     class="contact-status h-2 w-2 rounded-full"
+                     aria-hidden="true"
+                  ></span>
+
+                  <span>
+                     Available for new projects
+                  </span>
+
+               </div>
+               <!-- /mobile-nav-status -->
+
+            </div>   <!-- /mobile-nav-inner -->
+
+         </div>   <!-- /mobileNav -->
+
+      </header>   <!-- /site-header -->
+      <!-- end of section 1 -->
+      <!-- ========================================================================================== -->
+
+      <!-- Section 2 :Hero Image -->
+      <!-- =========================================================
+         HERO SECTION
+         DigitalPro - Digital Strategy / Design / Growth
+      ========================================================= -->
+      <section
+         id="home"
+         class="hero-section relative isolate overflow-hidden bg-[#090909] text-white"
+         aria-labelledby="hero-title"
+      >
+
+
+         <!-- =====================================================
+            BACKGROUND DECORATION
+         ====================================================== -->
+
+         <div
+            class="pointer-events-none absolute -right-40 -top-40 -z-10 h-[520px] w-[520px] rounded-full
+                  bg-[#d4af5a]/[0.06] blur-[110px]"
+         >
+         </div>   <!-- /background-glow-top -->
+
+
+         <div
+            class="pointer-events-none absolute -bottom-52 -left-40 -z-10 h-[420px] w-[420px] rounded-full
+                  bg-[#d4af5a]/[0.035] blur-[100px]"
+         >
+         </div>   <!-- /background-glow-bottom -->
+
+
+         <!-- =====================================================
+            SUBTLE GRID
+         ====================================================== -->
+
+         <div
+            class="pointer-events-none absolute inset-0 -z-10 opacity-30
+                  [background-image:linear-gradient(rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.018)_1px,transparent_1px)]
+                  [background-size:80px_80px]"
+         >
+         </div>   <!-- /hero-background-grid -->
+
+
+         <!-- =====================================================
+            MAIN CONTAINER
+         ====================================================== -->
+
+         <div
+            class="mx-auto w-full max-w-[1440px]
+                  px-5 py-20
+                  sm:px-8 sm:py-24
+                  lg:px-12 lg:py-28
+                  xl:px-16 xl:py-32"
+         >
+
+
+            <!-- ===================================================
+               HERO GRID
+            ==================================================== -->
+
+            <div
+               class="grid items-center gap-16
+                     lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)]
+                     lg:gap-16
+                     xl:gap-24"
+            >
+
+
+               <!-- =================================================
+                  LEFT SIDE
+               ================================================== -->
+
+               <div
+                  class="w-full max-w-[700px]"
+               >
+
+
+                  <!-- =============================================
+                     EYEBROW
+                  ============================================== -->
+
+                  <div
+                     class="mb-7 inline-flex items-center gap-2.5 rounded-full
+                           border border-[#d4af5a]/20
+                           bg-[#d4af5a]/[0.045]
+                           px-3.5 py-2
+                           shadow-[inset_0_1px_0_rgba(255,255,255,0.03)]"
+                  >
+
+                     <!-- Eyebrow Dot -->
+
+                     <span
+                        class="h-2 w-2 shrink-0 rounded-full bg-[#d4af5a]
+                              shadow-[0_0_12px_rgba(212,175,90,0.8)]"
+                        aria-hidden="true"
+                     >
+                     </span>   <!-- /eyebrow-dot -->
+
+
+                     <!-- Eyebrow Text -->
+
+                     <span
+                        class="text-[10px] font-bold uppercase tracking-[0.2em]
+                              text-[#e2c475]
+                              sm:text-[11px]"
+                     >
+                        Digital Strategy · Design · Growth
+                     </span>   <!-- /eyebrow-text -->
+
+
+                  </div>   <!-- /hero-eyebrow -->
+
+
+                  <!-- =============================================
+                     MAIN HEADING
+                  ============================================== -->
+
+                  <h1
+                     id="hero-title"
+                     class="max-w-[680px] text-[3.2rem] font-semibold leading-[1.02]
+                           tracking-[-0.055em] text-[#f5f3ed]
+                           sm:text-[4.1rem]
+                           md:text-[4.5rem]
+                           lg:text-[4rem]
+                           xl:text-[5rem]"
+                  >
+
+                     We Build Brands
+
+                     <span
+                        class="block text-[#d4af5a]"
+                     >
+                        That Grow
+                     </span>
+
+                     With Purpose.
+
+                  </h1>   <!-- /hero-title -->
+
+
+                  <!-- =============================================
+                     DESCRIPTION
+                  ============================================== -->
+
+                  <p
+                     class="mt-7 max-w-[620px]
+                           text-[15px] leading-7
+                           text-[#85827a]
+                           sm:text-base sm:leading-8
+                           lg:text-[17px]"
+                  >
+                     We combine strategy, creative design, technology,
+                     and performance marketing to create digital
+                     experiences that turn attention into measurable
+                     business growth.
+                  </p>   <!-- /hero-description -->
+
+
+                  <!-- =============================================
+                     FEATURES
+                  ============================================== -->
+
+                  <div
+                     class="mt-7 flex flex-col gap-3
+                           sm:flex-row sm:flex-wrap sm:gap-x-7 sm:gap-y-3"
+                  >
+
+
+                     <!-- =========================================
+                        FEATURE 01
+                     ========================================== -->
+
+                     <div
+                        class="flex items-center gap-2.5 text-sm text-[#d3d0c8]"
+                     >
+
+                        <span
+                           class="flex h-6 w-6 shrink-0 items-center justify-center
+                                 rounded-full
+                                 bg-[#d4af5a]
+                                 text-[11px] font-bold text-[#090909]
+                                 shadow-[0_0_0_4px_rgba(212,175,90,0.04)]"
+                           aria-hidden="true"
+                        >
+                           ✓
+                        </span>   <!-- /feature-icon -->
+
+
+                        <span>
+                           10+ Years Experience
+                        </span>
+
+                     </div>   <!-- /feature-01 -->
+
+
+                     <!-- =========================================
+                        FEATURE 02
+                     ========================================== -->
+
+                     <div
+                        class="flex items-center gap-2.5 text-sm text-[#d3d0c8]"
+                     >
+
+                        <span
+                           class="flex h-6 w-6 shrink-0 items-center justify-center
+                                 rounded-full
+                                 bg-[#d4af5a]
+                                 text-[11px] font-bold text-[#090909]
+                                 shadow-[0_0_0_4px_rgba(212,175,90,0.04)]"
+                           aria-hidden="true"
+                        >
+                           ✓
+                        </span>   <!-- /feature-icon -->
+
+
+                        <span>
+                           180+ Projects Delivered
+                        </span>
+
+                     </div>   <!-- /feature-02 -->
+
+
+                     <!-- =========================================
+                        FEATURE 03
+                     ========================================== -->
+
+                     <div
+                        class="flex items-center gap-2.5 text-sm text-[#d3d0c8]"
+                     >
+
+                        <span
+                           class="flex h-6 w-6 shrink-0 items-center justify-center
+                                 rounded-full
+                                 bg-[#d4af5a]
+                                 text-[11px] font-bold text-[#090909]
+                                 shadow-[0_0_0_4px_rgba(212,175,90,0.04)]"
+                           aria-hidden="true"
+                        >
+                           ✓
+                        </span>   <!-- /feature-icon -->
+
+
+                        <span>
+                           Senior Creative Team
+                        </span>
+
+                     </div>   <!-- /feature-03 -->
+
+
+                  </div>   <!-- /hero-features -->
+
+
+                  <!-- =============================================
+                     CALL TO ACTION BUTTONS
+                  ============================================== -->
+
+                  <div
+                     class="mt-8 flex flex-col gap-3
+                           sm:flex-row sm:items-center"
+                  >
+
+
+                     <!-- =========================================
+                        PRIMARY CTA
+                     ========================================== -->
+
+                     <a
+                        href="#contact"
+                        class="group inline-flex min-h-[58px] w-full items-center
+                              justify-center gap-5 rounded-[13px]
+                              bg-gradient-to-br from-[#dfbc68] to-[#cba34f]
+                              px-6 text-[15px] font-bold text-[#090909]
+                              shadow-[0_12px_30px_rgba(212,175,90,0.15)]
+                              transition-all duration-300
+                              hover:-translate-y-1
+                              hover:shadow-[0_18px_42px_rgba(212,175,90,0.24)]
+                              sm:w-auto sm:min-w-[205px]"
+                     >
+
+                        <span>
+                           Start Your Project
+                        </span>
+
+
+                        <span
+                           class="text-xl leading-none transition-transform
+                                 duration-300 group-hover:translate-x-1"
+                           aria-hidden="true"
+                        >
+                           →
+                        </span>
+
+                     </a>   <!-- /primary-cta -->
+
+
+                     <!-- =========================================
+                        SECONDARY CTA
+                     ========================================== -->
+
+                     <a
+                        href="#work"
+                        class="group inline-flex min-h-[58px] w-full items-center
+                              justify-center gap-3 rounded-[13px]
+                              border border-white/[0.11]
+                              bg-white/[0.025]
+                              px-6 text-[15px] font-bold text-[#f5f3ed]
+                              shadow-[inset_0_1px_0_rgba(255,255,255,0.025)]
+                              backdrop-blur-md
+                              transition-all duration-300
+                              hover:-translate-y-1
+                              hover:border-[#d4af5a]/35
+                              hover:bg-[#d4af5a]/[0.055]
+                              sm:w-auto sm:min-w-[205px]"
+                     >
+
+                        <!-- Play Circle -->
+
+                        <span
+                           class="flex h-8 w-8 shrink-0 items-center justify-center
+                                 rounded-full border border-white/[0.12]
+                                 bg-white/[0.035]
+                                 transition-all duration-300
+                                 group-hover:border-[#d4af5a]/35
+                                 group-hover:bg-[#d4af5a]/10"
+                        >
+
+                           <svg
+                              class="h-3 w-3 fill-current"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                           >
+                              <path d="M8 5v14l11-7z"></path>
+                           </svg>
+
+                        </span>   <!-- /play-circle -->
+
+
+                        <span>
+                           Explore Our Work
+                        </span>
+
+
+                     </a>   <!-- /secondary-cta -->
+
+
+                  </div>   <!-- /hero-actions -->
+
+
+                  <!-- =============================================
+                     TRUST AREA
+                  ============================================== -->
+
+                  <div
+                     class="mt-9 flex items-center gap-4
+                           border-t border-white/[0.08]
+                           pt-5"
+                  >
+
+
+                     <!-- =========================================
+                        CLIENT AVATARS
+                     ========================================== -->
+
+                     <div
+                        class="flex items-center pl-0.5"
+                        aria-label="Our clients"
+                     >
+
+
+                        <!-- Avatar 01 -->
+
+                        <span
+                           class="-ml-1.5 flex h-9 w-9 items-center justify-center
+                                 rounded-full border-2 border-[#090909]
+                                 bg-[#2d271b]
+                                 text-[10px] font-bold text-[#e2c475]"
+                        >
+                           AM
+                        </span>   <!-- /avatar-01 -->
+
+
+                        <!-- Avatar 02 -->
+
+                        <span
+                           class="-ml-1.5 flex h-9 w-9 items-center justify-center
+                                 rounded-full border-2 border-[#090909]
+                                 bg-[#242424]
+                                 text-[10px] font-bold text-[#d0ccc2]"
+                        >
+                           SK
+                        </span>   <!-- /avatar-02 -->
+
+
+                        <!-- Avatar 03 -->
+
+                        <span
+                           class="-ml-1.5 flex h-9 w-9 items-center justify-center
+                                 rounded-full border-2 border-[#090909]
+                                 bg-[#373023]
+                                 text-[10px] font-bold text-[#e2c475]"
+                        >
+                           JR
+                        </span>   <!-- /avatar-03 -->
+
+
+                        <!-- More Clients -->
+
+                        <span
+                           class="-ml-1.5 flex h-9 w-9 items-center justify-center
+                                 rounded-full border-2 border-[#090909]
+                                 bg-[#151515]
+                                 text-[12px] font-bold text-[#77736b]"
+                        >
+                           +
+                        </span>   <!-- /avatar-more -->
+
+
+                     </div>   <!-- /hero-avatars -->
+
+
+                     <!-- =========================================
+                        TRUST INFORMATION
+                     ========================================== -->
+
+                     <div>
+
+                        <!-- Stars -->
+
+                        <div
+                           class="text-xs tracking-[3px] text-[#d4af5a]"
+                           aria-label="5 star rating"
+                        >
+                           ★★★★★
+                        </div>   <!-- /hero-stars -->
+
+
+                        <!-- Trust Text -->
+
+                        <p
+                           class="mt-1.5 text-[11px] text-[#77736b]"
+                        >
+                           Trusted by 80+ ambitious businesses
+                        </p>   <!-- /hero-trust-text -->
+
+
+                     </div>   <!-- /hero-trust-info -->
+
+
+                  </div>   <!-- /hero-trust -->
+
+
+                  <!-- =============================================
+                     STATISTICS
+                  ============================================== -->
+
+                  <div
+                     class="mt-6 grid max-w-[620px] grid-cols-3
+                           border-t border-white/[0.08]
+                           pt-5"
+                  >
+
+
+                     <!-- =========================================
+                        STAT 01
+                     ========================================== -->
+
+                     <div
+                        class="border-l-0 pr-3 sm:pr-5"
+                     >
+
+                        <strong
+                           class="block font-['Space_Grotesk',sans-serif]
+                                 text-[27px] font-semibold leading-none
+                                 tracking-[-0.04em] text-[#f5f3ed]
+                                 sm:text-[32px]"
+                        >
+                           10+
+                        </strong>   <!-- /stat-number -->
+
+
+                        <span
+                           class="mt-2 block text-[9px] leading-4 text-[#5f5c56]
+                                 sm:text-[11px] sm:leading-5"
+                        >
+                           Years of<br>
+                           Experience
+                        </span>   <!-- /stat-label -->
+
+
+                     </div>   <!-- /stat-01 -->
+
+
+                     <!-- =========================================
+                        STAT 02
+                     ========================================== -->
+
+                     <div
+                        class="border-l border-white/[0.08]
+                              px-3 sm:px-5"
+                     >
+
+                        <strong
+                           class="block font-['Space_Grotesk',sans-serif]
+                                 text-[27px] font-semibold leading-none
+                                 tracking-[-0.04em] text-[#f5f3ed]
+                                 sm:text-[32px]"
+                        >
+                           180+
+                        </strong>   <!-- /stat-number -->
+
+
+                        <span
+                           class="mt-2 block text-[9px] leading-4 text-[#5f5c56]
+                                 sm:text-[11px] sm:leading-5"
+                        >
+                           Projects<br>
+                           Delivered
+                        </span>   <!-- /stat-label -->
+
+
+                     </div>   <!-- /stat-02 -->
+
+
+                     <!-- =========================================
+                        STAT 03
+                     ========================================== -->
+
+                     <div
+                        class="border-l border-white/[0.08]
+                              pl-3 sm:pl-5"
+                     >
+
+                        <strong
+                           class="block font-['Space_Grotesk',sans-serif]
+                                 text-[27px] font-semibold leading-none
+                                 tracking-[-0.04em] text-[#d4af5a]
+                                 sm:text-[32px]"
+                        >
+                           96%
+                        </strong>   <!-- /stat-number -->
+
+
+                        <span
+                           class="mt-2 block text-[9px] leading-4 text-[#5f5c56]
+                                 sm:text-[11px] sm:leading-5"
+                        >
+                           Client<br>
+                           Retention
+                        </span>   <!-- /stat-label -->
+
+
+                     </div>   <!-- /stat-03 -->
+
+
+                  </div>   <!-- /hero-stats -->
+
+
+               </div>   <!-- /hero-content -->
+
+
+               <!-- =================================================
+                  RIGHT SIDE
+               ================================================== -->
+
+               <div
+                  class="relative mx-auto w-full max-w-[650px]
+                        lg:ml-auto lg:mr-0"
+               >
+
+
+                  <!-- =================================================
+                     PERFORMANCE CARD
+                  ================================================== -->
+
+                  <div
+                     class="relative overflow-hidden rounded-[26px]
+                           border border-white/[0.10]
+                           bg-[#101010]
+                           shadow-[0_35px_90px_rgba(0,0,0,0.55)]"
+                  >
+
+
+                     <!-- =========================================
+                        GOLD TOP LINE
+                     ========================================== -->
+
+                     <div
+                        class="absolute left-[12%] top-0 h-px w-[76%]
+                              bg-gradient-to-r
+                              from-transparent
+                              via-[#d4af5a]
+                              to-transparent
+                              shadow-[0_0_12px_rgba(212,175,90,0.4)]"
+                     >
+                     </div>   <!-- /card-gold-line -->
+
+
+                     <!-- =========================================
+                        CARD HEADER
+                     ========================================== -->
+
+                     <div
+                        class="flex items-center justify-between gap-4
+                              border-b border-white/[0.08]
+                              px-4 py-4
+                              sm:px-5 sm:py-5"
+                     >
+
+
+                        <!-- =====================================
+                           BRAND INFORMATION
+                        ====================================== -->
+
+                        <div
+                           class="flex min-w-0 items-center gap-3"
+                        >
+
+
+                           <!-- Brand Icon -->
+
+                           <div
+                              class="flex h-10 w-10 shrink-0 items-center
+                                    justify-center rounded-xl
+                                    border border-[#d4af5a]/20
+                                    bg-[#d4af5a]/[0.08]
+                                    text-xs font-extrabold text-[#d4af5a]
+                                    sm:h-[42px] sm:w-[42px]"
+                           >
+                              DP
+                           </div>   <!-- /performance-brand-icon -->
+
+
+                           <!-- Brand Text -->
+
+                           <div class="min-w-0">
+
+                              <strong
+                                 class="block truncate text-xs font-bold
+                                       text-[#f5f3ed]
+                                       sm:text-sm"
+                              >
+                                 Digital Performance
+                              </strong>
+
+
+                              <span
+                                 class="mt-1 block truncate text-[9px]
+                                       text-[#62605b]
+                                       sm:text-[10px]"
+                              >
+                                 Growth overview · Q4 2026
+                              </span>
+
+                           </div>   <!-- /performance-brand-info -->
+
+
+                        </div>   <!-- /performance-brand -->
+
+
+                        <!-- =====================================
+                           LIVE STATUS
+                        ====================================== -->
+
+                        <div
+                           class="flex shrink-0 items-center gap-1.5
+                                 rounded-full
+                                 border border-emerald-400/10
+                                 bg-emerald-400/[0.045]
+                                 px-2 py-1.5
+                                 text-[8px] font-bold tracking-wider
+                                 text-emerald-400
+                                 sm:px-2.5"
+                        >
+
+                           <span
+                              class="h-1.5 w-1.5 rounded-full
+                                    bg-emerald-400
+                                    shadow-[0_0_9px_rgba(52,211,153,0.8)]"
+                           >
+                           </span>
+
+                           <span>
+                              LIVE
+                           </span>
+
+                        </div>   <!-- /performance-live -->
+
+
+                     </div>   <!-- /performance-header -->
+
+
+                     <!-- =========================================
+                        MAIN PERFORMANCE VALUE
+                     ========================================== -->
+
+                     <div
+                        class="flex items-end justify-between gap-4
+                              px-4 pb-3 pt-5
+                              sm:px-5 sm:pt-6"
+                     >
+
+
+                        <!-- Metric -->
+
+                        <div>
+
+                           <span
+                              class="block text-[9px] font-medium
+                                    uppercase tracking-[0.16em]
+                                    text-[#62605b]"
+                           >
+                              Average Growth
+                           </span>
+
+
+                           <div
+                              class="mt-1.5 flex items-baseline gap-2"
+                           >
+
+                              <strong
+                                 class="font-['Space_Grotesk',sans-serif]
+                                       text-[40px] font-semibold leading-none
+                                       tracking-[-0.05em] text-[#f5f3ed]
+                                       sm:text-[50px]"
+                              >
+                                 +68.4%
+                              </strong>
+
+
+                              <span
+                                 class="text-[10px] font-bold text-[#d4af5a]
+                                       sm:text-xs"
+                              >
+                                 ↑ 18.2%
+                              </span>
+
+                           </div>   <!-- /performance-value-row -->
+
+
+                        </div>   <!-- /performance-metric -->
+
+
+                        <!-- Target -->
+
+                        <span
+                           class="hidden rounded-full
+                                 bg-[#d4af5a]/[0.08]
+                                 px-2.5 py-1.5
+                                 text-[8px] font-bold
+                                 text-[#d4af5a]
+                                 sm:block"
+                        >
+                           Above Target
+                        </span>   <!-- /performance-target -->
+
+
+                     </div>   <!-- /performance-main -->
+
+
+                     <!-- =========================================
+                        CHART AREA
+                     ========================================== -->
+
+                     <div
+                        class="relative mx-2 overflow-hidden rounded-2xl
+                              border border-white/[0.055]
+                              bg-[#0c0c0c]
+                              sm:mx-3"
+                     >
+
+
+                        <!-- =====================================
+                           CHART GRID
+                        ====================================== -->
+
+                        <div
+                           class="pointer-events-none absolute inset-0
+                                 flex flex-col justify-around py-6"
+                        >
+
+                           <span
+                              class="h-px w-full bg-white/[0.035]"
+                           >
+                           </span>
+
+                           <span
+                              class="h-px w-full bg-white/[0.035]"
+                           >
+                           </span>
+
+                           <span
+                              class="h-px w-full bg-white/[0.035]"
+                           >
+                           </span>
+
+                           <span
+                              class="h-px w-full bg-white/[0.035]"
+                           >
+                           </span>
+
+                        </div>   <!-- /chart-grid -->
+
+
+                        <!-- =====================================
+                           GROWTH CHART
+                        ====================================== -->
+
+                        <svg
+                           class="relative block h-[210px] w-full
+                                 sm:h-[260px]"
+                           viewBox="0 0 700 260"
+                           preserveAspectRatio="none"
+                           role="img"
+                           aria-label="Digital performance growth chart"
+                        >
+
+
+                           <!-- Chart Gradient -->
+
+                           <defs>
+
+                              <linearGradient
+                                 id="heroGoldGradient"
+                                 x1="0"
+                                 y1="0"
+                                 x2="0"
+                                 y2="1"
+                              >
+
+                                 <stop
+                                    offset="0%"
+                                    stop-color="#d4af5a"
+                                    stop-opacity="0.20"
+                                 />
+
+                                 <stop
+                                    offset="100%"
+                                    stop-color="#d4af5a"
+                                    stop-opacity="0"
+                                 />
+
+                              </linearGradient>
+
+                           </defs>   <!-- /chart-gradient -->
+
+
+                           <!-- ==================================
+                              PREVIOUS PERFORMANCE
+                           =================================== -->
+
+                           <path
+                              d="
+                                 M0 230
+                                 C60 225 90 216 140 222
+                                 C190 228 215 207 265 214
+                                 C315 221 345 198 395 207
+                                 C445 216 470 185 520 194
+                                 C570 203 620 170 700 145
+                              "
+                              fill="none"
+                              stroke="rgba(255,255,255,0.12)"
+                              stroke-width="2"
+                              stroke-dasharray="5 8"
+                           >
+                           </path>   <!-- /previous-chart-line -->
+
+
+                           <!-- ==================================
+                              CHART AREA
+                           =================================== -->
+
+                           <path
+                              d="
+                                 M0 220
+                                 C55 216 75 201 125 207
+                                 C175 213 190 184 240 193
+                                 C290 202 305 165 355 174
+                                 C405 183 425 147 470 154
+                                 C520 161 540 122 585 130
+                                 C625 137 660 85 700 45
+                                 L700 260
+                                 L0 260
+                                 Z
+                              "
+                              fill="url(#heroGoldGradient)"
+                           >
+                           </path>   <!-- /chart-area -->
+
+
+                           <!-- ==================================
+                              MAIN GOLD LINE
+                           =================================== -->
+
+                           <path
+                              d="
+                                 M0 220
+                                 C55 216 75 201 125 207
+                                 C175 213 190 184 240 193
+                                 C290 202 305 165 355 174
+                                 C405 183 425 147 470 154
+                                 C520 161 540 122 585 130
+                                 C625 137 660 85 700 45
+                              "
+                              fill="none"
+                              stroke="#d4af5a"
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                           >
+                           </path>   <!-- /main-chart-line -->
+
+
+                           <!-- ==================================
+                              CURRENT POINT
+                           =================================== -->
+
+                           <circle
+                              cx="700"
+                              cy="45"
+                              r="7"
+                              fill="#e5c778"
+                              stroke="#101010"
+                              stroke-width="3"
+                           >
+                           </circle>   <!-- /chart-current-point -->
+
+
+                        </svg>   <!-- /growth-chart -->
+
+
+                     </div>   <!-- /performance-chart -->
+
+
+                     <!-- =========================================
+                        CHART LABELS
+                     ========================================== -->
+
+                     <div
+                        class="flex items-center justify-between
+                              px-4 pt-2
+                              text-[9px] text-[#3f3d39]
+                              sm:px-6 sm:text-[10px]"
+                     >
+
+                        <span>Jan</span>
+                        <span>Apr</span>
+                        <span>Jul</span>
+                        <span>Oct</span>
+                        <span>Dec</span>
+
+                     </div>   <!-- /chart-labels -->
+
+
+                     <!-- =========================================
+                        PERFORMANCE METRICS
+                     ========================================== -->
+
+                     <div
+                        class="mt-4 grid grid-cols-3
+                              border-t border-white/[0.08]
+                              px-4 py-4
+                              sm:px-5 sm:py-5"
+                     >
+
+
+                        <!-- =====================================
+                           ORGANIC TRAFFIC
+                        ====================================== -->
+
+                        <div
+                           class="border-l-0 pr-2 sm:pr-5"
+                        >
+
+                           <span
+                              class="block text-[8px] uppercase tracking-[0.09em]
+                                    text-[#595650]
+                                    sm:text-[9px]"
+                           >
+                              Organic Traffic
+                           </span>
+
+
+                           <strong
+                              class="mt-1 block text-base font-semibold
+                                    text-[#f5f3ed]
+                                    sm:text-xl"
+                           >
+                              +124%
+                           </strong>
+
+                        </div>   <!-- /organic-traffic -->
+
+
+                        <!-- =====================================
+                           CONVERSION
+                        ====================================== -->
+
+                        <div
+                           class="border-l border-white/[0.08]
+                                 px-2 sm:px-5"
+                        >
+
+                           <span
+                              class="block text-[8px] uppercase tracking-[0.09em]
+                                    text-[#595650]
+                                    sm:text-[9px]"
+                           >
+                              Conversion
+                           </span>
+
+
+                           <strong
+                              class="mt-1 block text-base font-semibold
+                                    text-[#f5f3ed]
+                                    sm:text-xl"
+                           >
+                              8.7%
+                           </strong>
+
+                        </div>   <!-- /conversion -->
+
+
+                        <!-- =====================================
+                           ROAS
+                        ====================================== -->
+
+                        <div
+                           class="border-l border-white/[0.08]
+                                 pl-2 sm:pl-5"
+                        >
+
+                           <span
+                              class="block text-[8px] uppercase tracking-[0.09em]
+                                    text-[#595650]
+                                    sm:text-[9px]"
+                           >
+                              ROAS
+                           </span>
+
+
+                           <strong
+                              class="mt-1 block text-base font-semibold
+                                    text-[#d4af5a]
+                                    sm:text-xl"
+                           >
+                              4.8x
+                           </strong>
+
+                        </div>   <!-- /roas -->
+
+
+                     </div>   <!-- /performance-metrics -->
+
+
+                  </div>   <!-- /performance-card -->
+
+
+                  <!-- =================================================
+                     FLOATING RESULT CARD
+                  ================================================== -->
+
+                  <div
+                     class="relative z-10 mx-auto mt-3 flex w-[calc(100%-24px)]
+                           items-center gap-3 rounded-2xl
+                           border border-[#d4af5a]/20
+                           bg-[#15130f]/95
+                           px-4 py-3
+                           shadow-[0_22px_55px_rgba(0,0,0,0.5)]
+                           backdrop-blur-xl
+                           sm:absolute sm:-bottom-10 sm:left-8
+                           sm:mx-0 sm:mt-0 sm:w-[330px]"
+                  >
+
+
+                     <!-- =========================================
+                        RESULT ICON
+                     ========================================== -->
+
+                     <div
+                        class="flex h-11 w-11 shrink-0 items-center
+                              justify-center rounded-full
+                              bg-[#d4af5a]/10
+                              text-[#d4af5a]"
+                     >
+
+                        <svg
+                           class="h-[18px] w-[18px]"
+                           viewBox="0 0 24 24"
+                           fill="none"
+                           stroke="currentColor"
+                           stroke-width="2"
+                           aria-hidden="true"
+                        >
+
+                           <path
+                              d="m5 12 4 4L19 6"
+                           >
+                           </path>
+
+                        </svg>
+
+                     </div>   <!-- /result-icon -->
+
+
+                     <!-- =========================================
+                        RESULT CONTENT
+                     ========================================== -->
+
+                     <div
+                        class="min-w-0 flex-1"
+                     >
+
+                        <span
+                           class="block text-[8px] uppercase
+                                 tracking-[0.12em] text-[#68645c]"
+                        >
+                           Latest Campaign
+                        </span>
+
+
+                        <strong
+                           class="mt-1 block truncate text-xs font-bold
+                                 text-[#f5f3ed]"
+                        >
+                           Growth target exceeded
+                        </strong>
+
+                     </div>   <!-- /result-content -->
+
+
+                     <!-- =========================================
+                        RESULT VALUE
+                     ========================================== -->
+
+                     <strong
+                        class="shrink-0 text-sm font-bold text-[#d4af5a]"
+                     >
+                        +32%
+                     </strong>   <!-- /result-value -->
+
+
+                  </div>   <!-- /hero-result-card -->
+
+
+               </div>   <!-- /hero-visual -->
+
+
+            </div>   <!-- /hero-grid -->
+
+
+         </div>   <!-- /hero-container -->
+
+
+      </section>   <!-- /home -->
+      <!-- end of section 2 -->
+      <!-- =========================================================================================== -->
+
+      <!-- Section 3 :Hero Image -->
+      <!-- =========================================================
+         SERVICES SECTION
+         DigitalPro - Integrated Digital Services
+      ========================================================= -->
+      <section
+         id="services"
+         class="relative overflow-hidden bg-[#090909] px-5 py-24 text-white
+               sm:px-8 sm:py-28
+               lg:px-12 lg:py-32
+               xl:px-16"
+         aria-labelledby="services-title"
+      >
+
+
+         <!-- =====================================================
+            BACKGROUND GLOW
+         ====================================================== -->
+
+         <div
+            class="pointer-events-none absolute -left-48 top-32 h-[450px] w-[450px]
+                  rounded-full bg-[#d4af5a]/[0.045] blur-[120px]"
+         >
+         </div>   <!-- /services-left-glow -->
+
+
+         <div
+            class="pointer-events-none absolute -right-48 bottom-0 h-[500px] w-[500px]
+                  rounded-full bg-[#d4af5a]/[0.035] blur-[130px]"
+         >
+         </div>   <!-- /services-right-glow -->
+
+
+         <!-- =====================================================
+            SUBTLE GRID BACKGROUND
+         ====================================================== -->
+
+         <div
+            class="pointer-events-none absolute inset-0 opacity-20
+                  [background-image:linear-gradient(rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.018)_1px,transparent_1px)]
+                  [background-size:80px_80px]"
+         >
+         </div>   <!-- /services-grid -->
+
+
+         <!-- =====================================================
+            MAIN CONTAINER
+         ====================================================== -->
+
+         <div
+            class="relative mx-auto w-full max-w-[1440px]"
+         >
+
+
+            <!-- ===================================================
+               SECTION HEADER
+            ==================================================== -->
+
+            <div
+               class="mx-auto max-w-3xl text-center"
+            >
+
+
+               <!-- ===============================================
+                  EYEBROW
+               ================================================ -->
+
+               <div
+                  class="mb-5 inline-flex items-center gap-2.5
+                        rounded-full
+                        border border-[#d4af5a]/20
+                        bg-[#d4af5a]/[0.045]
+                        px-4 py-2"
+               >
+
+                  <span
+                     class="h-1.5 w-1.5 rounded-full
+                           bg-[#d4af5a]
+                           shadow-[0_0_10px_rgba(212,175,90,0.8)]"
+                     aria-hidden="true"
+                  >
+                  </span>   <!-- /services-eyebrow-dot -->
+
+
+                  <span
+                     class="text-[10px] font-bold uppercase
+                           tracking-[0.22em] text-[#d4af5a]"
+                  >
+                     What We Do
+                  </span>   <!-- /services-eyebrow-text -->
+
+
+               </div>   <!-- /services-eyebrow -->
+
+
+               <!-- ===============================================
+                  SECTION TITLE
+               ================================================ -->
+
+               <h2
+                  id="services-title"
+                  class="text-4xl font-semibold leading-[1.05]
+                        tracking-[-0.045em] text-[#f5f3ed]
+                        sm:text-5xl
+                        lg:text-6xl"
+               >
+
+                  Everything Your Brand Needs
+
+                  <span
+                     class="block text-[#d4af5a]"
+                  >
+                     To Grow Digitally.
+                  </span>
+
+               </h2>   <!-- /services-title -->
+
+
+               <!-- ===============================================
+                  SECTION DESCRIPTION
+               ================================================ -->
+
+               <p
+                  class="mx-auto mt-6 max-w-2xl text-sm leading-7
+                        text-[#77736b]
+                        sm:text-base sm:leading-8"
+               >
+                  From strategy and branding to high-performance websites,
+                  search visibility, and AI-powered automation — we build
+                  digital systems designed to turn attention into measurable
+                  business growth.
+               </p>   <!-- /services-description -->
+
+
+               <!-- ===============================================
+                  DECORATIVE LINE
+               ================================================ -->
+
+               <div
+                  class="mx-auto mt-7 h-px w-20
+                        bg-gradient-to-r
+                        from-transparent
+                        via-[#d4af5a]
+                        to-transparent
+                        shadow-[0_0_14px_rgba(212,175,90,0.35)]"
+               >
+               </div>   <!-- /services-divider -->
+
+
+            </div>   <!-- /services-header -->
+
+
+            <!-- ===================================================
+               SERVICES GRID
+            ==================================================== -->
+
+            <div
+               class="mt-16 grid gap-5
+                     sm:grid-cols-2
+                     xl:grid-cols-3
+                     xl:gap-6"
+            >
+
+
+               <!-- =================================================
+                  SERVICE CARD 01
+                  STRATEGY & CONSULTING
+               ================================================== -->
+
+               <article
+                  class="group relative flex h-full flex-col overflow-hidden
+                        rounded-2xl
+                        border border-white/[0.08]
+                        bg-[#101010]
+                        p-7
+                        transition-all duration-500
+                        hover:-translate-y-2
+                        hover:border-[#d4af5a]/30
+                        hover:bg-[#12110f]
+                        hover:shadow-[0_25px_60px_rgba(0,0,0,0.45)]
+                        sm:p-8"
+               >
+
+
+                  <!-- Card Glow -->
+
+                  <div
+                     class="pointer-events-none absolute -right-20 -top-20
+                           h-40 w-40 rounded-full
+                           bg-[#d4af5a]/[0.07]
+                           blur-[60px]
+                           opacity-0
+                           transition-opacity duration-500
+                           group-hover:opacity-100"
+                  >
+                  </div>   <!-- /service-card-glow -->
+
+
+                  <!-- Number -->
+
+                  <span
+                     class="absolute right-7 top-7 text-[10px]
+                           font-bold tracking-[0.2em]
+                           text-[#3d3a34]
+                           transition-colors duration-300
+                           group-hover:text-[#d4af5a]/40"
+                  >
+                     01
+                  </span>   <!-- /service-number -->
+
+
+                  <!-- Icon -->
+
+                  <div
+                     class="relative flex h-14 w-14 items-center justify-center
+                           rounded-2xl
+                           border border-[#d4af5a]/15
+                           bg-[#d4af5a]/[0.07]
+                           text-[#d4af5a]
+                           transition-all duration-500
+                           group-hover:scale-110
+                           group-hover:border-[#d4af5a]/35
+                           group-hover:bg-[#d4af5a]/[0.12]
+                           group-hover:shadow-[0_0_30px_rgba(212,175,90,0.12)]"
+                  >
+
+                     <svg
+                        class="h-6 w-6"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        aria-hidden="true"
+                     >
+                        <path d="M4 19h16"></path>
+                        <path d="M6 16V9"></path>
+                        <path d="M10 16V5"></path>
+                        <path d="M14 16v-7"></path>
+                        <path d="M18 16V7"></path>
+                     </svg>
+
+                  </div>   <!-- /service-icon -->
+
+
+                  <!-- Content -->
+
+                  <div
+                     class="relative mt-7"
+                  >
+
+                     <p
+                        class="mb-2 text-[10px] font-semibold uppercase
+                              tracking-[0.16em] text-[#d4af5a]"
+                     >
+                        Strategy
+                     </p>
+
+
+                     <h3
+                        class="text-xl font-semibold tracking-[-0.02em]
+                              text-[#f5f3ed]
+                              sm:text-2xl"
+                     >
+                        Digital Strategy & Consulting
+                     </h3>
+
+
+                     <p
+                        class="mt-4 text-sm leading-7 text-[#77736b]"
+                     >
+                        We turn business goals into clear digital strategies,
+                        customer journeys, and growth opportunities that give
+                        your brand a measurable direction.
+                     </p>
+
+                  </div>   <!-- /service-content -->
+
+
+                  <!-- Features -->
+
+                  <ul
+                     class="mt-7 space-y-3 border-t border-white/[0.07]
+                           pt-6"
+                  >
+
+                     <li
+                        class="flex items-center gap-3 text-xs text-[#aaa69d]"
+                     >
+                        <span
+                           class="flex h-5 w-5 shrink-0 items-center justify-center
+                                 rounded-full bg-[#d4af5a]/10 text-[#d4af5a]"
+                        >
+                           ✓
+                        </span>
+                        Market & Competitor Research
+                     </li>
+
+
+                     <li
+                        class="flex items-center gap-3 text-xs text-[#aaa69d]"
+                     >
+                        <span
+                           class="flex h-5 w-5 shrink-0 items-center justify-center
+                                 rounded-full bg-[#d4af5a]/10 text-[#d4af5a]"
+                        >
+                           ✓
+                        </span>
+                        Customer Journey Mapping
+                     </li>
+
+
+                     <li
+                        class="flex items-center gap-3 text-xs text-[#aaa69d]"
+                     >
+                        <span
+                           class="flex h-5 w-5 shrink-0 items-center justify-center
+                                 rounded-full bg-[#d4af5a]/10 text-[#d4af5a]"
+                        >
+                           ✓
+                        </span>
+                        Growth Roadmaps
+                     </li>
+
+                  </ul>   <!-- /service-features -->
+
+
+                  <!-- Bottom Link -->
+
+                  <a
+                     href="#contact"
+                     class="mt-8 inline-flex items-center gap-2 text-xs
+                           font-semibold text-[#77736b]
+                           transition-colors duration-300
+                           group-hover:text-[#d4af5a]"
+                  >
+                     Explore Strategy
+
+                     <span
+                        class="transition-transform duration-300
+                              group-hover:translate-x-1"
+                     >
+                        →
+                     </span>
+
+                  </a>   <!-- /service-link -->
+
+
+               </article>   <!-- /service-card-01 -->
+
+
+               <!-- =================================================
+                  SERVICE CARD 02
+                  PERFORMANCE MARKETING
+               ================================================== -->
+
+               <article
+                  class="group relative flex h-full flex-col overflow-hidden
+                        rounded-2xl
+                        border border-[#d4af5a]/20
+                        bg-gradient-to-br
+                        from-[#15130f]
+                        via-[#101010]
+                        to-[#0d0d0d]
+                        p-7
+                        shadow-[0_20px_50px_rgba(0,0,0,0.25)]
+                        transition-all duration-500
+                        hover:-translate-y-2
+                        hover:border-[#d4af5a]/40
+                        hover:shadow-[0_30px_70px_rgba(0,0,0,0.5)]
+                        sm:p-8"
+               >
+
+
+                  <!-- Featured Badge -->
+
+                  <div
+                     class="absolute right-6 top-6 rounded-full
+                           border border-[#d4af5a]/20
+                           bg-[#d4af5a]/[0.08]
+                           px-3 py-1.5"
+                  >
+
+                     <span
+                        class="text-[8px] font-bold uppercase
+                              tracking-[0.14em] text-[#d4af5a]"
+                     >
+                        Growth Focus
+                     </span>
+
+                  </div>   <!-- /featured-badge -->
+
+
+                  <!-- Icon -->
+
+                  <div
+                     class="relative flex h-14 w-14 items-center justify-center
+                           rounded-2xl
+                           border border-[#d4af5a]/25
+                           bg-[#d4af5a]/10
+                           text-[#d4af5a]
+                           transition-all duration-500
+                           group-hover:scale-110
+                           group-hover:rotate-3
+                           group-hover:shadow-[0_0_35px_rgba(212,175,90,0.15)]"
+                  >
+
+                     <svg
+                        class="h-6 w-6"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        aria-hidden="true"
+                     >
+                        <path d="M3 17l6-6 4 4 8-9"></path>
+                        <path d="M17 6h4v4"></path>
+                     </svg>
+
+                  </div>   <!-- /service-icon -->
+
+
+                  <!-- Content -->
+
+                  <div
+                     class="relative mt-7"
+                  >
+
+                     <p
+                        class="mb-2 text-[10px] font-semibold uppercase
+                              tracking-[0.16em] text-[#d4af5a]"
+                     >
+                        Performance
+                     </p>
+
+
+                     <h3
+                        class="text-xl font-semibold tracking-[-0.02em]
+                              text-[#f5f3ed]
+                              sm:text-2xl"
+                     >
+                        Performance Marketing
+                     </h3>
+
+
+                     <p
+                        class="mt-4 text-sm leading-7 text-[#77736b]"
+                     >
+                        Build predictable acquisition with data-driven
+                        campaigns across search, social, and paid media
+                        platforms.
+                     </p>
+
+                  </div>   <!-- /service-content -->
+
+
+                  <!-- Mini Metrics -->
+
+                  <div
+                     class="mt-6 grid grid-cols-3 overflow-hidden rounded-xl
+                           border border-white/[0.06]
+                           bg-black/20"
+                  >
+
+                     <div
+                        class="px-3 py-3"
+                     >
+                        <strong
+                           class="block text-sm text-[#f5f3ed]"
+                        >
+                           +68%
+                        </strong>
+
+                        <span
+                           class="mt-1 block text-[8px] uppercase
+                                 tracking-wider text-[#5e5a53]"
+                        >
+                           Growth
+                        </span>
+                     </div>
+
+
+                     <div
+                        class="border-l border-white/[0.06] px-3 py-3"
+                     >
+                        <strong
+                           class="block text-sm text-[#f5f3ed]"
+                        >
+                           4.8x
+                        </strong>
+
+                        <span
+                           class="mt-1 block text-[8px] uppercase
+                                 tracking-wider text-[#5e5a53]"
+                        >
+                           ROAS
+                        </span>
+                     </div>
+
+
+                     <div
+                        class="border-l border-white/[0.06] px-3 py-3"
+                     >
+                        <strong
+                           class="block text-sm text-[#d4af5a]"
+                        >
+                           8.7%
+                        </strong>
+
+                        <span
+                           class="mt-1 block text-[8px] uppercase
+                                 tracking-wider text-[#5e5a53]"
+                        >
+                           CVR
+                        </span>
+                     </div>
+
+                  </div>   <!-- /service-metrics -->
+
+
+                  <!-- Features -->
+
+                  <ul
+                     class="mt-6 space-y-3"
+                  >
+
+                     <li
+                        class="flex items-center gap-3 text-xs text-[#aaa69d]"
+                     >
+                        <span class="text-[#d4af5a]">✓</span>
+                        Paid Search & Social
+                     </li>
+
+
+                     <li
+                        class="flex items-center gap-3 text-xs text-[#aaa69d]"
+                     >
+                        <span class="text-[#d4af5a]">✓</span>
+                        Conversion Optimization
+                     </li>
+
+
+                     <li
+                        class="flex items-center gap-3 text-xs text-[#aaa69d]"
+                     >
+                        <span class="text-[#d4af5a]">✓</span>
+                        Performance Analytics
+                     </li>
+
+                  </ul>   <!-- /service-features -->
+
+
+                  <a
+                     href="#contact"
+                     class="mt-8 inline-flex items-center gap-2 text-xs
+                           font-semibold text-[#77736b]
+                           transition-colors duration-300
+                           group-hover:text-[#d4af5a]"
+                  >
+                     Scale Your Growth
+
+                     <span
+                        class="transition-transform duration-300
+                              group-hover:translate-x-1"
+                     >
+                        →
+                     </span>
+
+                  </a>   <!-- /service-link -->
+
+
+               </article>   <!-- /service-card-02 -->
+
+
+               <!-- =================================================
+                  SERVICE CARD 03
+                  WEB DESIGN & DEVELOPMENT
+               ================================================== -->
+
+               <article
+                  class="group relative flex h-full flex-col overflow-hidden
+                        rounded-2xl
+                        border border-white/[0.08]
+                        bg-[#101010]
+                        p-7
+                        transition-all duration-500
+                        hover:-translate-y-2
+                        hover:border-[#d4af5a]/30
+                        hover:bg-[#12110f]
+                        hover:shadow-[0_25px_60px_rgba(0,0,0,0.45)]
+                        sm:p-8"
+               >
+
+
+                  <span
+                     class="absolute right-7 top-7 text-[10px]
+                           font-bold tracking-[0.2em]
+                           text-[#3d3a34]
+                           transition-colors duration-300
+                           group-hover:text-[#d4af5a]/40"
+                  >
+                     03
+                  </span>   <!-- /service-number -->
+
+
+                  <!-- Icon -->
+
+                  <div
+                     class="relative flex h-14 w-14 items-center justify-center
+                           rounded-2xl
+                           border border-[#d4af5a]/15
+                           bg-[#d4af5a]/[0.07]
+                           text-[#d4af5a]
+                           transition-all duration-500
+                           group-hover:scale-110
+                           group-hover:border-[#d4af5a]/35
+                           group-hover:bg-[#d4af5a]/[0.12]"
+                  >
+
+                     <svg
+                        class="h-6 w-6"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        aria-hidden="true"
+                     >
+                        <path d="m8 9-4 3 4 3"></path>
+                        <path d="m16 9 4 3-4 3"></path>
+                        <path d="m14 5-4 14"></path>
+                     </svg>
+
+                  </div>   <!-- /service-icon -->
+
+
+                  <div
+                     class="relative mt-7"
+                  >
+
+                     <p
+                        class="mb-2 text-[10px] font-semibold uppercase
+                              tracking-[0.16em] text-[#d4af5a]"
+                     >
+                        Digital Experiences
+                     </p>
+
+
+                     <h3
+                        class="text-xl font-semibold tracking-[-0.02em]
+                              text-[#f5f3ed]
+                              sm:text-2xl"
+                     >
+                        Web Design & Development
+                     </h3>
+
+
+                     <p
+                        class="mt-4 text-sm leading-7 text-[#77736b]"
+                     >
+                        High-performance websites and digital products
+                        engineered to look exceptional, load fast, and
+                        convert visitors into customers.
+                     </p>
+
+                  </div>   <!-- /service-content -->
+
+
+                  <!-- Browser Preview -->
+
+                  <div
+                     class="mt-6 overflow-hidden rounded-xl
+                           border border-white/[0.07]
+                           bg-[#0b0b0b]"
+                  >
+
+                     <!-- Browser Bar -->
+
+                     <div
+                        class="flex items-center gap-1.5
+                              border-b border-white/[0.06]
+                              px-3 py-2"
+                     >
+
+                        <span class="h-1.5 w-1.5 rounded-full bg-[#3c3934]"></span>
+                        <span class="h-1.5 w-1.5 rounded-full bg-[#3c3934]"></span>
+                        <span class="h-1.5 w-1.5 rounded-full bg-[#d4af5a]/50"></span>
+
+                     </div>   <!-- /browser-bar -->
+
+
+                     <!-- Browser Content -->
+
+                     <div
+                        class="p-4"
+                     >
+
+                        <div
+                           class="mb-3 h-2 w-16 rounded-full bg-[#d4af5a]/40"
+                        >
+                        </div>
+
+                        <div
+                           class="h-2 w-32 rounded-full bg-white/[0.08]"
+                        >
+                        </div>
+
+                        <div
+                           class="mt-3 h-12 rounded-lg
+                                 bg-gradient-to-r
+                                 from-[#d4af5a]/10
+                                 to-white/[0.02]"
+                        >
+                        </div>
+
+                     </div>   <!-- /browser-content -->
+
+
+                  </div>   <!-- /browser-preview -->
+
+
+                  <a
+                     href="#contact"
+                     class="mt-7 inline-flex items-center gap-2 text-xs
+                           font-semibold text-[#77736b]
+                           transition-colors duration-300
+                           group-hover:text-[#d4af5a]"
+                  >
+                     Build Your Website
+
+                     <span
+                        class="transition-transform duration-300
+                              group-hover:translate-x-1"
+                     >
+                        →
+                     </span>
+
+                  </a>   <!-- /service-link -->
+
+
+               </article>   <!-- /service-card-03 -->
+
+
+               <!-- =================================================
+                  SERVICE CARD 04
+                  SEO
+               ================================================== -->
+
+               <article
+                  class="group relative flex h-full flex-col overflow-hidden
+                        rounded-2xl
+                        border border-white/[0.08]
+                        bg-[#101010]
+                        p-7
+                        transition-all duration-500
+                        hover:-translate-y-2
+                        hover:border-[#d4af5a]/30
+                        hover:bg-[#12110f]
+                        hover:shadow-[0_25px_60px_rgba(0,0,0,0.45)]
+                        sm:p-8"
+               >
+
+                  <span
+                     class="absolute right-7 top-7 text-[10px]
+                           font-bold tracking-[0.2em]
+                           text-[#3d3a34]
+                           group-hover:text-[#d4af5a]/40"
+                  >
+                     04
+                  </span>   <!-- /service-number -->
+
+
+                  <div
+                     class="flex h-14 w-14 items-center justify-center
+                           rounded-2xl
+                           border border-[#d4af5a]/15
+                           bg-[#d4af5a]/[0.07]
+                           text-[#d4af5a]
+                           transition-all duration-500
+                           group-hover:scale-110
+                           group-hover:border-[#d4af5a]/35"
+                  >
+
+                     <svg
+                        class="h-6 w-6"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        aria-hidden="true"
+                     >
+                        <circle cx="11" cy="11" r="6"></circle>
+                        <path d="m16 16 5 5"></path>
+                        <path d="M8 11h6"></path>
+                        <path d="M11 8v6"></path>
+                     </svg>
+
+                  </div>   <!-- /service-icon -->
+
+
+                  <div
+                     class="mt-7"
+                  >
+
+                     <p
+                        class="mb-2 text-[10px] font-semibold uppercase
+                              tracking-[0.16em] text-[#d4af5a]"
+                     >
+                        Visibility
+                     </p>
+
+
+                     <h3
+                        class="text-xl font-semibold text-[#f5f3ed]
+                              sm:text-2xl"
+                     >
+                        SEO & Organic Growth
+                     </h3>
+
+
+                     <p
+                        class="mt-4 text-sm leading-7 text-[#77736b]"
+                     >
+                        Increase qualified organic traffic with technical
+                        SEO, content strategy, keyword research, and
+                        continuous search optimization.
+                     </p>
+
+                  </div>   <!-- /service-content -->
+
+
+                  <ul
+                     class="mt-7 space-y-3 border-t border-white/[0.07]
+                           pt-6"
+                  >
+
+                     <li class="flex items-center gap-3 text-xs text-[#aaa69d]">
+                        <span class="text-[#d4af5a]">✓</span>
+                        Technical SEO
+                     </li>
+
+                     <li class="flex items-center gap-3 text-xs text-[#aaa69d]">
+                        <span class="text-[#d4af5a]">✓</span>
+                        Keyword Strategy
+                     </li>
+
+                     <li class="flex items-center gap-3 text-xs text-[#aaa69d]">
+                        <span class="text-[#d4af5a]">✓</span>
+                        Content Optimization
+                     </li>
+
+                  </ul>   <!-- /service-features -->
+
+
+                  <a
+                     href="#contact"
+                     class="mt-8 inline-flex items-center gap-2 text-xs
+                           font-semibold text-[#77736b]
+                           transition-colors duration-300
+                           group-hover:text-[#d4af5a]"
+                  >
+                     Increase Your Visibility
+
+                     <span
+                        class="transition-transform duration-300
+                              group-hover:translate-x-1"
+                     >
+                        →
+                     </span>
+
+                  </a>   <!-- /service-link -->
+
+
+               </article>   <!-- /service-card-04 -->
+
+
+               <!-- =================================================
+                  SERVICE CARD 05
+                  BRAND IDENTITY
+               ================================================== -->
+
+               <article
+                  class="group relative flex h-full flex-col overflow-hidden
+                        rounded-2xl
+                        border border-white/[0.08]
+                        bg-[#101010]
+                        p-7
+                        transition-all duration-500
+                        hover:-translate-y-2
+                        hover:border-[#d4af5a]/30
+                        hover:bg-[#12110f]
+                        hover:shadow-[0_25px_60px_rgba(0,0,0,0.45)]
+                        sm:p-8"
+               >
+
+                  <span
+                     class="absolute right-7 top-7 text-[10px]
+                           font-bold tracking-[0.2em]
+                           text-[#3d3a34]
+                           group-hover:text-[#d4af5a]/40"
+                  >
+                     05
+                  </span>   <!-- /service-number -->
+
+
+                  <div
+                     class="flex h-14 w-14 items-center justify-center
+                           rounded-2xl
+                           border border-[#d4af5a]/15
+                           bg-[#d4af5a]/[0.07]
+                           text-[#d4af5a]
+                           transition-all duration-500
+                           group-hover:scale-110
+                           group-hover:rotate-3
+                           group-hover:border-[#d4af5a]/35"
+                  >
+
+                     <svg
+                        class="h-6 w-6"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        aria-hidden="true"
+                     >
+                        <path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7l-8-4Z"></path>
+                        <path d="M9 12h6"></path>
+                        <path d="M12 9v6"></path>
+                     </svg>
+
+                  </div>   <!-- /service-icon -->
+
+
+                  <div
+                     class="mt-7"
+                  >
+
+                     <p
+                        class="mb-2 text-[10px] font-semibold uppercase
+                              tracking-[0.16em] text-[#d4af5a]"
+                     >
+                        Brand
+                     </p>
+
+
+                     <h3
+                        class="text-xl font-semibold text-[#f5f3ed]
+                              sm:text-2xl"
+                     >
+                        Brand Identity & Creative
+                     </h3>
+
+
+                     <p
+                        class="mt-4 text-sm leading-7 text-[#77736b]"
+                     >
+                        Build a distinctive visual identity that communicates
+                        your positioning clearly and gives every customer
+                        interaction a consistent personality.
+                     </p>
+
+                  </div>   <!-- /service-content -->
+
+
+                  <div
+                     class="mt-7 flex flex-wrap gap-2"
+                  >
+
+                     <span
+                        class="rounded-full border border-white/[0.08]
+                              bg-white/[0.025] px-3 py-1.5
+                              text-[9px] text-[#858078]"
+                     >
+                        Brand Strategy
+                     </span>
+
+                     <span
+                        class="rounded-full border border-white/[0.08]
+                              bg-white/[0.025] px-3 py-1.5
+                              text-[9px] text-[#858078]"
+                     >
+                        Visual Identity
+                     </span>
+
+                     <span
+                        class="rounded-full border border-white/[0.08]
+                              bg-white/[0.025] px-3 py-1.5
+                              text-[9px] text-[#858078]"
+                     >
+                        Art Direction
+                     </span>
+
+                  </div>   <!-- /brand-tags -->
+
+
+                  <a
+                     href="#contact"
+                     class="mt-8 inline-flex items-center gap-2 text-xs
+                           font-semibold text-[#77736b]
+                           transition-colors duration-300
+                           group-hover:text-[#d4af5a]"
+                  >
+                     Build Your Brand
+
+                     <span
+                        class="transition-transform duration-300
+                              group-hover:translate-x-1"
+                     >
+                        →
+                     </span>
+
+                  </a>   <!-- /service-link -->
+
+
+               </article>   <!-- /service-card-05 -->
+
+
+               <!-- =================================================
+                  SERVICE CARD 06
+                  AI AUTOMATION
+               ================================================== -->
+
+               <article
+                  class="group relative flex h-full flex-col overflow-hidden
+                        rounded-2xl
+                        border border-[#d4af5a]/20
+                        bg-gradient-to-br
+                        from-[#13120f]
+                        to-[#0e0e0e]
+                        p-7
+                        transition-all duration-500
+                        hover:-translate-y-2
+                        hover:border-[#d4af5a]/40
+                        hover:shadow-[0_30px_70px_rgba(0,0,0,0.5)]
+                        sm:p-8"
+               >
+
+
+                  <!-- AI Glow -->
+
+                  <div
+                     class="pointer-events-none absolute -bottom-20 -right-20
+                           h-48 w-48 rounded-full
+                           bg-[#d4af5a]/[0.08]
+                           blur-[70px]
+                           transition-opacity duration-500
+                           group-hover:opacity-150"
+                  >
+                  </div>   <!-- /ai-glow -->
+
+
+                  <span
+                     class="absolute right-7 top-7 text-[10px]
+                           font-bold tracking-[0.2em]
+                           text-[#d4af5a]/50"
+                  >
+                     06
+                  </span>   <!-- /service-number -->
+
+
+                  <!-- Icon -->
+
+                  <div
+                     class="relative flex h-14 w-14 items-center justify-center
+                           rounded-2xl
+                           border border-[#d4af5a]/25
+                           bg-[#d4af5a]/10
+                           text-[#d4af5a]
+                           transition-all duration-500
+                           group-hover:scale-110
+                           group-hover:shadow-[0_0_35px_rgba(212,175,90,0.15)]"
+                  >
+
+                     <svg
+                        class="h-6 w-6"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        aria-hidden="true"
+                     >
+                        <rect
+                           x="4"
+                           y="4"
+                           width="16"
+                           height="16"
+                           rx="3"
+                        ></rect>
+
+                        <path d="M9 9h6v6H9z"></path>
+                        <path d="M9 2v2"></path>
+                        <path d="M15 2v2"></path>
+                        <path d="M9 20v2"></path>
+                        <path d="M15 20v2"></path>
+                        <path d="M2 9h2"></path>
+                        <path d="M2 15h2"></path>
+                        <path d="M20 9h2"></path>
+                        <path d="M20 15h2"></path>
+                     </svg>
+
+                  </div>   <!-- /service-icon -->
+
+
+                  <div
+                     class="relative mt-7"
+                  >
+
+                     <p
+                        class="mb-2 text-[10px] font-semibold uppercase
+                              tracking-[0.16em] text-[#d4af5a]"
+                     >
+                        Intelligent Systems
+                     </p>
+
+
+                     <h3
+                        class="text-xl font-semibold text-[#f5f3ed]
+                              sm:text-2xl"
+                     >
+                        AI Automation & Solutions
+                     </h3>
+
+
+                     <p
+                        class="mt-4 text-sm leading-7 text-[#77736b]"
+                     >
+                        Automate repetitive workflows and create smarter
+                        customer experiences with AI-powered tools,
+                        assistants, and intelligent business systems.
+                     </p>
+
+                  </div>   <!-- /service-content -->
+
+
+                  <!-- AI Capabilities -->
+
+                  <div
+                     class="mt-6 grid grid-cols-2 gap-2"
+                  >
+
+                     <div
+                        class="rounded-xl border border-white/[0.06]
+                              bg-white/[0.02] px-3 py-3"
+                     >
+                        <span
+                           class="block text-[9px] font-semibold text-[#aaa69d]"
+                        >
+                           AI Assistants
+                        </span>
+
+                        <span
+                           class="mt-1 block text-[8px] text-[#5f5c56]"
+                        >
+                           24/7 Support
+                        </span>
+                     </div>
+
+
+                     <div
+                        class="rounded-xl border border-white/[0.06]
+                              bg-white/[0.02] px-3 py-3"
+                     >
+                        <span
+                           class="block text-[9px] font-semibold text-[#aaa69d]"
+                        >
+                           Automation
+                        </span>
+
+                        <span
+                           class="mt-1 block text-[8px] text-[#5f5c56]"
+                        >
+                           Save Time
+                        </span>
+                     </div>
+
+                  </div>   <!-- /ai-capabilities -->
+
+
+                  <a
+                     href="#contact"
+                     class="relative mt-8 inline-flex items-center gap-2
+                           text-xs font-semibold text-[#77736b]
+                           transition-colors duration-300
+                           group-hover:text-[#d4af5a]"
+                  >
+                     Explore AI Solutions
+
+                     <span
+                        class="transition-transform duration-300
+                              group-hover:translate-x-1"
+                     >
+                        →
+                     </span>
+
+                  </a>   <!-- /service-link -->
+
+
+               </article>   <!-- /service-card-06 -->
+
+
+            </div>   <!-- /services-grid -->
+
+
+            <!-- ===================================================
+               BOTTOM CTA
+            ==================================================== -->
+
+            <div
+               class="mt-14 flex flex-col items-center justify-between
+                     gap-5 rounded-2xl
+                     border border-white/[0.08]
+                     bg-gradient-to-r
+                     from-[#11100e]
+                     via-[#121212]
+                     to-[#11100e]
+                     px-6 py-6
+                     sm:flex-row sm:px-8"
+            >
+
+
+               <!-- CTA Text -->
+
+               <div
+                  class="text-center sm:text-left"
+               >
+
+                  <p
+                     class="text-sm font-semibold text-[#f5f3ed]"
+                  >
+                     Have a project in mind?
+                  </p>
+
+
+                  <p
+                     class="mt-1 text-xs text-[#69665f]"
+                  >
+                     Let's turn your next idea into a measurable digital experience.
+                  </p>
+
+               </div>   <!-- /services-bottom-text -->
+
+
+               <!-- CTA Button -->
+
+               <a
+                  href="#contact"
+                  class="group inline-flex shrink-0 items-center gap-3
+                        rounded-xl
+                        border border-[#d4af5a]/30
+                        bg-[#d4af5a]
+                        px-5 py-3
+                        text-xs font-bold text-[#090909]
+                        shadow-[0_10px_30px_rgba(212,175,90,0.12)]
+                        transition-all duration-300
+                        hover:-translate-y-1
+                        hover:bg-[#e1c16f]
+                        hover:shadow-[0_15px_40px_rgba(212,175,90,0.22)]"
+               >
+
+                  Start a Conversation
+
+                  <span
+                     class="text-base transition-transform duration-300
+                           group-hover:translate-x-1"
+                  >
+                     →
+                  </span>
+
+               </a>   <!-- /services-bottom-cta -->
+
+
+            </div>   <!-- /services-bottom-cta -->
+
+
+         </div>   <!-- /services-container -->
+
+
+      </section>   <!-- /services -->  
+      <!-- end of section 3 -->
+      <!-- =========================================================================================== -->
+      <script src="js/script.js"></script>
+   </body>
+</html>
