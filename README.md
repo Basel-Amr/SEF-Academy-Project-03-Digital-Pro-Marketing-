@@ -1,7 +1,7 @@
 # DigitalPro — Creative Digital Agency
 
 <p align="center">
-  <img src="output/1.png" alt="DigitalPro Website Preview" width="100%">
+  <img src="output\1.png" alt="DigitalPro Website Preview" width="100%">
 </p>
 
 <h3 align="center">A Premium, Responsive Digital Agency Website</h3>
